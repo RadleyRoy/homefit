@@ -214,6 +214,7 @@ fun AboutScreen(onBack: () -> Unit) {
             AppCard(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(16.dp)) {
                     Text("HomeFit ${BuildConfig.VERSION_NAME}", style = MaterialTheme.typography.titleLarge)
+                    Text("Created by Radley", style = MaterialTheme.typography.titleSmall, color = MaterialTheme.colorScheme.primary)
                     Text(
                         "A personal home-workout app. No accounts, no ads, no tracking, and no internet access at all: everything stays on this phone unless you export it, turn on Health Connect or send a prompt to Claude yourself.",
                         style = MaterialTheme.typography.bodyMedium,

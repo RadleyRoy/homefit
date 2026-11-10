@@ -69,6 +69,14 @@ export const exercisePhotos = {
   straight_leg_raise: [commons('Exercise Straight Leg Raises.png')],
   seated_knee_extension: [commons('Straight Leg Raise Exercise.jpeg')],
   seated_torso_twist: [pexels(4534688)],
+  knee_push_ups: [pexels(6285210), pexels(6285216)],
+  clamshells: [pexels(7479759)],
+  prone_y_raises: [pexels(39219678)],
+  reverse_snow_angels: [pexels(20860619)],
+  // Locust pose: the same chest lift off the floor, with the legs raised as well.
+  back_extensions: [commons('Salabhasana (cropped).jpg')],
+  // Seated, one knee drawn up in both hands: the starting grip of the leg-resisted curl.
+  leg_assisted_curl: [pexels(4587391)],
 };
 
 // Card and header photos. The app looks for covers/<workout or program id>.jpg first, then

@@ -1547,7 +1547,10 @@
    "Lower your chest towards the floor, then push back up."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "knee_push_ups/0.jpg",
+   "knee_push_ups/1.jpg"
+  ],
   "easier": "wall_push_ups",
   "harder": "push_ups"
  },
@@ -2048,7 +2051,9 @@
    "Lower slowly. Push down with the leg a little to make it harder. Switch sides."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "leg_assisted_curl/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2804,7 +2809,9 @@
    "Hold for a moment, then lower slowly."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "back_extensions/0.jpg"
+  ],
   "easier": null,
   "harder": "superman"
  },
@@ -2834,7 +2841,9 @@
    "Sweep your arms out and overhead in a wide arc, then back to your sides."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "reverse_snow_angels/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2863,7 +2872,9 @@
    "Hold briefly, then lower."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "prone_y_raises/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -4628,7 +4639,9 @@
    "Lower slowly. Finish the set, then switch sides."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "clamshells/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },

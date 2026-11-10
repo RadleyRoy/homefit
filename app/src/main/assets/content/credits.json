@@ -196,6 +196,13 @@
   "page": "https://www.pexels.com/photo/8523561/"
  },
  {
+  "file": "images/back_extensions/0.jpg",
+  "title": "Salabhasana (cropped)",
+  "author": "Nikiwiki242",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Salabhasana_(cropped).jpg"
+ },
+ {
   "file": "images/bird_dog/0.jpg",
   "title": "Girl doing bird dog yoga pose",
   "author": "PTPioneer",
@@ -259,6 +266,13 @@
   "page": "https://commons.wikimedia.org/wiki/File:Exercise_Chair_Squat.png"
  },
  {
+  "file": "images/clamshells/0.jpg",
+  "title": "Pexels photo 7479759",
+  "author": "Pexels contributor",
+  "license": "Pexels License",
+  "page": "https://www.pexels.com/photo/7479759/"
+ },
+ {
   "file": "images/cobra_stretch/0.jpg",
   "title": "Bhujangasana zamkovoi",
   "author": "Sezam777",
@@ -308,6 +322,27 @@
   "page": "https://www.pexels.com/photo/7298411/"
  },
  {
+  "file": "images/knee_push_ups/0.jpg",
+  "title": "Pexels photo 6285210",
+  "author": "Pexels contributor",
+  "license": "Pexels License",
+  "page": "https://www.pexels.com/photo/6285210/"
+ },
+ {
+  "file": "images/knee_push_ups/1.jpg",
+  "title": "Pexels photo 6285216",
+  "author": "Pexels contributor",
+  "license": "Pexels License",
+  "page": "https://www.pexels.com/photo/6285216/"
+ },
+ {
+  "file": "images/leg_assisted_curl/0.jpg",
+  "title": "Pexels photo 4587391",
+  "author": "Pexels contributor",
+  "license": "Pexels License",
+  "page": "https://www.pexels.com/photo/4587391/"
+ },
+ {
   "file": "images/leg_raises/0.jpg",
   "title": "Zirshekam1",
   "author": "Mahdi Mousavi",
@@ -350,11 +385,25 @@
   "page": "https://www.pexels.com/photo/6303467/"
  },
  {
+  "file": "images/prone_y_raises/0.jpg",
+  "title": "Pexels photo 39219678",
+  "author": "Pexels contributor",
+  "license": "Pexels License",
+  "page": "https://www.pexels.com/photo/39219678/"
+ },
+ {
   "file": "images/reverse_lunges/0.jpg",
   "title": "Girl doing lunges",
   "author": "PTPioneer",
   "license": "CC BY 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Girl_doing_lunges.jpg"
+ },
+ {
+  "file": "images/reverse_snow_angels/0.jpg",
+  "title": "Pexels photo 20860619",
+  "author": "Pexels contributor",
+  "license": "Pexels License",
+  "page": "https://www.pexels.com/photo/20860619/"
  },
  {
   "file": "images/seated_glute_stretch/0.png",
