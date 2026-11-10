@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window background and launcher icon only; in-app colours live in ui/theme/Color.kt. -->
+    <color name="window_background">#FF081210</color>
+    <color name="icon_bg_start">#FF10201C</color>
+    <color name="icon_bg_end">#FF081210</color>
+    <color name="icon_accent">#FF17E0B0</color>
+    <color name="icon_text">#FFECF6F3</color>
+</resources>

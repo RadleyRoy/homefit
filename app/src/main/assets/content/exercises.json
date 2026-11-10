@@ -1,0 +1,4731 @@
+[
+ {
+  "id": "jumping_jacks",
+  "name": "Jumping Jacks",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "shoulders"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Stand with your feet together and your arms by your sides.",
+   "Jump your feet out to slightly wider than your shoulders while sweeping your arms overhead.",
+   "Jump back to the start, bringing your arms down to your sides.",
+   "Keep a steady rhythm and land softly on the balls of your feet."
+  ],
+  "tips": [
+   "Land softly with your knees slightly bent.",
+   "Breathe in rhythm with the jumps."
+  ],
+  "images": [],
+  "easier": "march_in_place",
+  "harder": "star_jumps"
+ },
+ {
+  "id": "high_knees",
+  "name": "High Knees",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY",
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "calves"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Stand tall with your feet hip-width apart.",
+   "Run on the spot, driving one knee up to hip height, then the other.",
+   "Pump your arms in time with your legs.",
+   "Stay on the balls of your feet and keep your chest up."
+  ],
+  "tips": [
+   "Lean back slightly rather than hunching forward."
+  ],
+  "images": [],
+  "easier": "march_in_place",
+  "harder": null
+ },
+ {
+  "id": "butt_kicks",
+  "name": "Butt Kicks",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY",
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "hamstrings"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Stand tall and jog on the spot.",
+   "Kick each heel up towards your glutes as you go.",
+   "Keep your knees pointing down and your arms pumping."
+  ],
+  "tips": [],
+  "images": [
+   "butt_kicks/0.jpg",
+   "butt_kicks/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "burpees",
+  "name": "Burpees",
+  "category": "CARDIO",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps",
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "abdominals",
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Stand with your feet shoulder-width apart.",
+   "Squat down and place your hands on the floor in front of you.",
+   "Jump your feet back into a plank, then do one push-up.",
+   "Jump your feet back towards your hands, then jump up with your arms overhead."
+  ],
+  "tips": [
+   "Keep your core tight in the plank so your hips do not sag."
+  ],
+  "images": [],
+  "easier": "squat_thrusts",
+  "harder": null
+ },
+ {
+  "id": "squat_thrusts",
+  "name": "Squat Thrusts",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "abdominals"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 8,
+  "noJump": true,
+  "instructions": [
+   "Stand with your feet shoulder-width apart.",
+   "Squat down and place your hands on the floor.",
+   "Step your feet back one at a time into a plank.",
+   "Step them back in and stand up."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "burpees"
+ },
+ {
+  "id": "mountain_climbers",
+  "name": "Mountain Climbers",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "chest",
+   "hamstrings",
+   "shoulders"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 8,
+  "noJump": true,
+  "instructions": [
+   "Start in a high plank with your hands under your shoulders.",
+   "Drive one knee towards your chest, then switch legs quickly.",
+   "Keep your hips level and your back flat throughout."
+  ],
+  "tips": [
+   "Go slower and keep good form rather than rushing."
+  ],
+  "images": [
+   "mountain_climbers/0.jpg",
+   "mountain_climbers/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "star_jumps",
+  "name": "Star Jumps",
+  "category": "PLYOMETRIC",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes",
+   "hamstrings",
+   "shoulders"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body.",
+   "To initiate the move, squat down halfway and explode back up as high as possible. Fully extend your entire body, spreading your legs and arms away from the body.",
+   "As you land, bring your limbs back in and absorb your impact through the legs."
+  ],
+  "tips": [],
+  "images": [
+   "star_jumps/0.jpg",
+   "star_jumps/1.jpg"
+  ],
+  "easier": "jumping_jacks",
+  "harder": null
+ },
+ {
+  "id": "squat_jumps",
+  "name": "Jump Squats",
+  "category": "PLYOMETRIC",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Stand with your feet shoulder-width apart.",
+   "Squat down until your thighs are close to parallel with the floor.",
+   "Explode upwards into a jump, swinging your arms for momentum.",
+   "Land softly with bent knees and go straight into the next squat."
+  ],
+  "tips": [],
+  "images": [
+   "squat_jumps/0.jpg",
+   "squat_jumps/1.jpg"
+  ],
+  "easier": "squats",
+  "harder": null
+ },
+ {
+  "id": "split_jumps",
+  "name": "Split Jumps",
+  "category": "PLYOMETRIC",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Assume a lunge stance position with one foot forward with the knee bent, and the rear knee nearly touching the ground.",
+   "Ensure that the front knee is over the midline of the foot.",
+   "Extending through both legs, jump as high as possible, swinging your arms to gain lift.",
+   "As you jump, bring your feet together, and move them back to their initial positions as you land.",
+   "Absorb the impact by reverting back to the starting position."
+  ],
+  "tips": [],
+  "images": [
+   "split_jumps/0.jpg",
+   "split_jumps/1.jpg"
+  ],
+  "easier": "reverse_lunges",
+  "harder": null
+ },
+ {
+  "id": "tuck_jumps",
+  "name": "Tuck Jumps",
+  "category": "PLYOMETRIC",
+  "level": "ADVANCED",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "abductors",
+   "adductors",
+   "calves",
+   "glutes",
+   "quadriceps"
+  ],
+  "measure": "x8",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Begin in a comfortable standing position with your knees slightly bent. Hold your hands in front of you, palms down with your fingertips together at chest height. This will be your starting position.",
+   "Rapidly dip down into a quarter squat and immediately explode upward. Drive the knees towards the chest, attempting to touch them to the palms of the hands.",
+   "Jump as high as you can, raising your knees up, and then ensure a good land be re-extending your legs, absorbing impact through be allowing the knees to rebend."
+  ],
+  "tips": [],
+  "images": [
+   "tuck_jumps/0.jpg",
+   "tuck_jumps/1.jpg"
+  ],
+  "easier": "squat_jumps",
+  "harder": null
+ },
+ {
+  "id": "skater_hops",
+  "name": "Skater Hops",
+  "category": "PLYOMETRIC",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "adductors"
+  ],
+  "secondaryMuscles": [
+   "abductors",
+   "calves",
+   "glutes",
+   "hamstrings",
+   "quadriceps"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Stand on your right leg with a slight bend in the knee.",
+   "Leap sideways to the left, landing softly on your left foot.",
+   "Swing your right leg behind you and touch down lightly if you need balance.",
+   "Leap back to the right and keep alternating."
+  ],
+  "tips": [],
+  "images": [
+   "skater_hops/0.jpg",
+   "skater_hops/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "shadow_boxing",
+  "name": "Shadow Boxing",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "abdominals"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 6,
+  "noJump": true,
+  "instructions": [
+   "Stand in a boxing stance: feet staggered, knees soft, fists by your chin.",
+   "Throw fast straight punches, alternating arms.",
+   "Rotate through your torso with each punch and bring the fist straight back to your chin."
+  ],
+  "tips": [
+   "Do not lock your elbows at full extension."
+  ],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "march_in_place",
+  "name": "March on the Spot",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Stand tall with your arms by your sides.",
+   "March on the spot, lifting each knee towards hip height.",
+   "Swing your arms naturally in time with your steps."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "high_knees"
+ },
+ {
+  "id": "inchworm",
+  "name": "Inchworms",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x6",
+  "perSide": false,
+  "met": 4,
+  "noJump": true,
+  "instructions": [
+   "Stand tall, then bend forward and place your hands on the floor, bending your knees as needed.",
+   "Walk your hands forward until you are in a high plank.",
+   "Walk your feet up towards your hands, then roll back up to standing."
+  ],
+  "tips": [],
+  "images": [
+   "inchworm/0.jpg",
+   "inchworm/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "step_up_knee_raise",
+  "name": "Step-Up with Knee Raise",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings",
+   "quadriceps"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand facing a box or bench of an appropriate height with your feet together. This will be your starting position.",
+   "Begin the movement by stepping up, putting your left foot on the top of the bench. Extend through the hip and knee of your front leg to stand up on the box. As you stand on the box with your left leg, flex your right knee and hip, bringing your knee as high as you can.",
+   "Reverse this motion to step down off the box, and then repeat the sequence on the opposite leg."
+  ],
+  "tips": [
+   "Use a sturdy step or a chair pushed against a wall."
+  ],
+  "images": [
+   "step_up_knee_raise/0.jpg",
+   "step_up_knee_raise/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "plank_jacks",
+  "name": "Plank Jacks",
+  "category": "CARDIO",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "ABS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "adductors"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Start in a high plank with your feet together.",
+   "Jump your feet out wide, then back together, like a horizontal jumping jack.",
+   "Keep your hips level and your shoulders over your wrists."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "spider_crawl",
+  "name": "Spider Crawl",
+  "category": "STRENGTH",
+  "level": "ADVANCED",
+  "equipment": "NONE",
+  "focus": [
+   "ABS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "chest",
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Begin in a prone position on the floor. Support your weight on your hands and toes, with your feet together and your body straight. Your arms should be bent to 90 degrees. This will be your starting position.",
+   "Initiate the movement by raising one foot off of the ground. Externally rotate the leg and bring the knee toward your elbow, as far forward as possible.",
+   "Return this leg to the starting position and repeat on the opposite side."
+  ],
+  "tips": [],
+  "images": [
+   "spider_crawl/0.jpg",
+   "spider_crawl/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "brisk_walk",
+  "name": "Brisk Walk",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "OUTDOORS",
+  "focus": [
+   "LEGS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes"
+  ],
+  "measure": "60s",
+  "perSide": false,
+  "met": 4.3,
+  "noJump": true,
+  "instructions": [
+   "Walk at a pace where you can talk but not sing.",
+   "Swing your arms naturally and stand tall.",
+   "Use it to recover between running intervals."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "easy_run",
+  "name": "Easy Run",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "OUTDOORS",
+  "focus": [
+   "LEGS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "hamstrings",
+   "calves",
+   "glutes"
+  ],
+  "measure": "60s",
+  "perSide": false,
+  "met": 8.3,
+  "noJump": false,
+  "instructions": [
+   "Run at a relaxed, conversational pace.",
+   "Take short, light steps and land under your hips rather than out in front.",
+   "Keep your shoulders relaxed and breathe steadily."
+  ],
+  "tips": [
+   "If you can't speak in full sentences, slow down."
+  ],
+  "images": [],
+  "easier": "brisk_walk",
+  "harder": "fast_run"
+ },
+ {
+  "id": "fast_run",
+  "name": "Fast Run",
+  "category": "CARDIO",
+  "level": "INTERMEDIATE",
+  "equipment": "OUTDOORS",
+  "focus": [
+   "LEGS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "hamstrings",
+   "calves",
+   "glutes"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 11,
+  "noJump": false,
+  "instructions": [
+   "Pick up the pace to a hard but controlled effort.",
+   "Drive your arms and lift your knees a little higher.",
+   "Hold good form; ease off if it starts to fall apart."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": "easy_run",
+  "harder": null
+ },
+ {
+  "id": "crunches",
+  "name": "Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x15",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your knees bent and feet flat on the floor.",
+   "Place your hands lightly behind your head or across your chest.",
+   "Curl your shoulders off the floor by contracting your abs, then lower slowly."
+  ],
+  "tips": [
+   "Do not pull on your neck; your hands are only there for support."
+  ],
+  "images": [
+   "crunches/0.jpg",
+   "crunches/1.jpg"
+  ],
+  "easier": null,
+  "harder": "tuck_crunch"
+ },
+ {
+  "id": "crunch_overhead",
+  "name": "Overhead Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on the floor with your back flat and knees bent with around a 60-degree angle between the hamstrings and the calves.",
+   "Keep your feet flat on the floor and stretch your arms overhead with your palms crossed. This will be your starting position.",
+   "Curl your upper body forward and bring your shoulder blades just off the floor. At all times, keep your arms aligned with your head, neck and shoulder. Don't move them forward from that position. Exhale as you perform this portion of the movement and hold the contraction for a second.",
+   "Slowly lower down to the starting position as you inhale.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "crunch_overhead/0.jpg",
+   "crunch_overhead/1.jpg"
+  ],
+  "easier": "crunches",
+  "harder": null
+ },
+ {
+  "id": "bicycle_crunches",
+  "name": "Bicycle Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x16",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie flat on the floor with your lower back pressed to the ground. For this exercise, you will need to put your hands beside your head. Be careful however to not strain with the neck as you perform it. Now lift your shoulders into the crunch position.",
+   "Bring knees up to where they are perpendicular to the floor, with your lower legs parallel to the floor. This will be your starting position.",
+   "Now simultaneously, slowly go through a cycle pedal motion kicking forward with the right leg and bringing in the knee of the left leg. Bring your right elbow close to your left knee by crunching to the side, as you breathe out.",
+   "Go back to the initial position as you breathe in.",
+   "Crunch to the opposite side as you cycle your legs and bring closer your left elbow to your right knee and exhale.",
+   "Continue alternating in this manner until all of the recommended repetitions for each side have been completed."
+  ],
+  "tips": [],
+  "images": [
+   "bicycle_crunches/0.jpg",
+   "bicycle_crunches/1.jpg"
+  ],
+  "easier": "heel_touches",
+  "harder": null
+ },
+ {
+  "id": "heel_touches",
+  "name": "Heel Touches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x20",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on the floor with the knees bent and the feet on the floor around 18-24 inches apart. Your arms should be extended by your side. This will be your starting position.",
+   "Crunch over your torso forward and up about 3-4 inches to the right side and touch your right heel as you hold the contraction for a second. Exhale while performing this movement.",
+   "Now go back slowly to the starting position as you inhale.",
+   "Now crunch over your torso forward and up around 3-4 inches to the left side and touch your left heel as you hold the contraction for a second. Exhale while performing this movement and then go back to the starting position as you inhale. Now that both heels have been touched, that is considered 1 repetition.",
+   "Continue alternating sides in this manner until all prescribed repetitions are done."
+  ],
+  "tips": [],
+  "images": [
+   "heel_touches/0.jpg",
+   "heel_touches/1.jpg"
+  ],
+  "easier": null,
+  "harder": "bicycle_crunches"
+ },
+ {
+  "id": "russian_twist",
+  "name": "Russian Twists",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "lower back"
+  ],
+  "measure": "x20",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Sit on the floor with your knees bent and lean back slightly with a straight back.",
+   "Clasp your hands in front of your chest.",
+   "Rotate your torso to bring your hands beside one hip, then twist to the other side."
+  ],
+  "tips": [
+   "Keep your back straight; lift your feet only when you can keep it straight."
+  ],
+  "images": [
+   "russian_twist/0.jpg",
+   "russian_twist/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "plank",
+  "name": "Plank",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Rest on your forearms and toes, elbows directly under your shoulders.",
+   "Lift your hips so your body forms a straight line from head to heels.",
+   "Brace your abs and squeeze your glutes. Hold, breathing steadily."
+  ],
+  "tips": [
+   "Do not let your hips sag or pike up.",
+   "Look at the floor to keep your neck neutral."
+  ],
+  "images": [
+   "plank/0.jpg",
+   "plank/1.jpg"
+  ],
+  "easier": "knee_plank",
+  "harder": "plank_jacks"
+ },
+ {
+  "id": "knee_plank",
+  "name": "Knee Plank",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Rest on your forearms and knees, elbows under your shoulders.",
+   "Keep a straight line from your head to your knees.",
+   "Brace your abs and hold, breathing steadily."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "plank"
+ },
+ {
+  "id": "side_plank",
+  "name": "Side Plank",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "measure": "20s",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your side with your elbow under your shoulder and your legs stacked.",
+   "Lift your hips until your body is straight from head to feet.",
+   "Hold, then switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "side_plank/0.jpg",
+   "side_plank/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "reverse_crunches",
+  "name": "Reverse Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie down on the floor with your legs fully extended and arms to the side of your torso with the palms on the floor. Your arms should be stationary for the entire exercise.",
+   "Move your legs up so that your thighs are perpendicular to the floor and feet are together and parallel to the floor. This is the starting position.",
+   "While inhaling, move your legs towards the torso as you roll your pelvis backwards and you raise your hips off the floor. At the end of this movement your knees will be touching your chest.",
+   "Hold the contraction for a second and move your legs back to the starting position while exhaling.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "reverse_crunches/0.jpg",
+   "reverse_crunches/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "leg_raises",
+  "name": "Leg Raises",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "quadriceps"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your legs straight and your hands under your hips.",
+   "Keeping your legs together, raise them until they point at the ceiling.",
+   "Lower them slowly until they hover just above the floor, then repeat."
+  ],
+  "tips": [
+   "Press your lower back into the floor the whole time."
+  ],
+  "images": [],
+  "easier": "reverse_crunches",
+  "harder": null
+ },
+ {
+  "id": "flutter_kicks",
+  "name": "Flutter Kicks",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "quadriceps"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your legs straight and your hands under your hips.",
+   "Lift both heels a few centimetres off the floor.",
+   "Kick your legs up and down in small, quick alternating movements."
+  ],
+  "tips": [
+   "Press your lower back into the floor; raise your legs higher if it arches."
+  ],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "scissor_kicks",
+  "name": "Scissor Kicks",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "To begin, lie down with your back pressed against the floor or on an exercise mat (optional). Your arms should be fully extended to the sides with your palms facing down. Note: The arms should be stationary the entire time.",
+   "With a slight bend at the knees, lift your legs up so that your heels are about 6 inches off the ground. This is the starting position.",
+   "Now lift your left leg up to about a 45 degree angle while your right leg is lowered until the heel is about 2-3 inches from the ground.",
+   "Switch movements by raising your right leg up and lowering your left leg. Remember to breathe while performing this exercise.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "scissor_kicks/0.jpg",
+   "scissor_kicks/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dead_bug",
+  "name": "Dead Bug",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Begin lying on your back with your hands extended above you toward the ceiling.",
+   "Bring your feet, knees, and hips up to 90 degrees.",
+   "Exhale hard to bring your ribcage down and flatten your back onto the floor, rotating your pelvis up and squeezing your glutes. Hold this position throughout the movement. This will be your starting position.",
+   "Initiate the exercise by extending one leg, straightening the knee and hip to bring the leg just above the ground.",
+   "Maintain the position of your lumbar and pelvis as you perform the movement, as your back is going to want to arch.",
+   "Stay tight and return the working leg to the starting position.",
+   "Repeat on the opposite side, alternating until the set is complete."
+  ],
+  "tips": [],
+  "images": [
+   "dead_bug/0.jpg",
+   "dead_bug/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "sit_ups",
+  "name": "Sit-Ups",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your knees bent and feet flat; tuck your feet under a sofa if you need to.",
+   "Cross your arms over your chest.",
+   "Curl all the way up until your chest is close to your thighs, then lower slowly."
+  ],
+  "tips": [],
+  "images": [
+   "sit_ups/0.jpg",
+   "sit_ups/1.jpg"
+  ],
+  "easier": "crunches",
+  "harder": null
+ },
+ {
+  "id": "v_ups",
+  "name": "V-Ups",
+  "category": "STRENGTH",
+  "level": "ADVANCED",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x10",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie flat on the floor (or exercise mat) on your back with your arms extended straight back behind your head and your legs extended also. This will be your starting position.",
+   "As you exhale, bend at the waist while simultaneously raising your legs and arms to meet in a jackknife position. Tip: The legs should be extended and lifted at approximately a 35-45 degree angle from the floor and the arms should be extended and parallel to your legs. The upper torso should be off the floor.",
+   "While inhaling, lower your arms and legs back to the starting position.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "v_ups/0.jpg",
+   "v_ups/1.jpg"
+  ],
+  "easier": "sit_ups",
+  "harder": null
+ },
+ {
+  "id": "elbow_to_knee",
+  "name": "Elbow to Knee Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x16",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on the floor, crossing your right leg across your bent left knee. Clasp your hands behind your head, beginning with your shoulder blades on the ground. This will be your starting position.",
+   "Perform the motion by flexing the spine and rotating your torso to bring the left elbow to the right knee.",
+   "Return to the starting position and repeat the movement for the desired number of repetitions before switching sides."
+  ],
+  "tips": [],
+  "images": [
+   "elbow_to_knee/0.jpg",
+   "elbow_to_knee/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "oblique_crunches",
+  "name": "Oblique Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Start out by lying on your right side with your legs lying on top of each other. Make sure your knees are bent a little bit.",
+   "Place your left hand behind your head.",
+   "Once you are in this set position, begin by moving your left elbow up as you would perform a normal crunch except this time the main emphasis is on your obliques.",
+   "Crunch as high as you can, hold the contraction for a second and then slowly drop back down into the starting position.",
+   "Remember to breathe in during the eccentric (lowering) part of the exercise and to breathe out during the concentric (elevation) part of the exercise."
+  ],
+  "tips": [],
+  "images": [
+   "oblique_crunches/0.jpg",
+   "oblique_crunches/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "butt_ups",
+  "name": "Butt-Ups",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Begin a pushup position but with your elbows on the ground and resting on your forearms. Your arms should be bent at a 90 degree angle.",
+   "Arch your back slightly out rather than keeping your back completely straight.",
+   "Raise your glutes toward the ceiling, squeezing your abs tightly to close the distance between your ribcage and hips. The end result will be that you'll end up in a high bridge position. Exhale as you perform this portion of the movement.",
+   "Lower back down slowly to your starting position as you breathe in. Tip: Don't let your back sag downwards.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "butt_ups/0.jpg",
+   "butt_ups/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "cocoons",
+  "name": "Cocoons",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Begin by lying on your back on the ground. Your legs should be straight and your arms extended behind your head. This will be your starting position.",
+   "To perform the movement, tuck the knees toward your chest, rotating your pelvis to lift your glutes from the floor. As you do so, flex the spine, bringing your arms back over your head to perform a simultaneous crunch motion.",
+   "After a brief pause, return to the starting position."
+  ],
+  "tips": [],
+  "images": [
+   "cocoons/0.jpg",
+   "cocoons/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "tuck_crunch",
+  "name": "Tuck Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "To begin, lie down on the floor or an exercise mat with your back pressed against the floor. Your arms should be lying across your sides with the palms facing down.",
+   "Your legs should be crossed by wrapping one ankle around the other. Slowly elevate your legs up in the air until your thighs are perpendicular to the floor with a slight bend at the knees. Note: Your knees and toes should be parallel to the floor as opposed to the thighs.",
+   "Move your arms from the floor and cross them so they are resting on your chest. This is the starting position.",
+   "While keeping your lower back pressed against the floor, slowly lift your torso. Remember to exhale while perform this part of the exercise.",
+   "Slowly begin to lower your torso back down to the starting position while inhaling.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "tuck_crunch/0.jpg",
+   "tuck_crunch/1.jpg"
+  ],
+  "easier": "crunches",
+  "harder": null
+ },
+ {
+  "id": "hip_raise",
+  "name": "Bent-Knee Hip Raise",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lay flat on the floor with your arms next to your sides.",
+   "Now bend your knees at around a 75 degree angle and lift your feet off the floor by around 2 inches.",
+   "Using your lower abs, bring your knees in towards you as you maintain the 75 degree angle bend in your legs. Continue this movement until you raise your hips off of the floor by rolling your pelvis backward. Breathe out as you perform this portion of the movement. Tip: At the end of the movement your knees will be over your chest.",
+   "Squeeze your abs at the top of the movement for a second and then return to the starting position slowly as you breathe in. Tip: Maintain a controlled motion at all times.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "hip_raise/0.jpg",
+   "hip_raise/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "toe_touch_crunch",
+  "name": "Toe Touch Crunches",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "To begin, lie down on the floor or an exercise mat with your back pressed against the floor. Your arms should be lying across your sides with the palms facing down.",
+   "Your legs should be touching each other. Slowly elevate your legs up in the air until they are almost perpendicular to the floor with a slight bend at the knees. Your feet should be parallel to the floor.",
+   "Move your arms so that they are fully extended at a 45 degree angle from the floor. This is the starting position.",
+   "While keeping your lower back pressed against the floor, slowly lift your torso and use your hands to try and touch your toes. Remember to exhale while perform this part of the exercise.",
+   "Slowly begin to lower your torso and arms back down to the starting position while inhaling. Remember to keep your arms straight out pointing towards your toes.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "toe_touch_crunch/0.jpg",
+   "toe_touch_crunch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "push_up_side_plank",
+  "name": "Push-Up to Side Plank",
+  "category": "STRENGTH",
+  "level": "ADVANCED",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST",
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x8",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Get into pushup position on the toes with your hands just outside of shoulder width.",
+   "Perform a pushup by allowing the elbows to flex. As you descend, keep your body straight.",
+   "Do one pushup and as you come up, shift your weight on the left side of the body, twist to the side while bringing the right arm up towards the ceiling in a side plank.",
+   "Lower the arm back to the floor for another pushup and then twist to the other side.",
+   "Repeat the series, alternating each side, for 10 or more reps."
+  ],
+  "tips": [],
+  "images": [
+   "push_up_side_plank/0.jpg",
+   "push_up_side_plank/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "bird_dog",
+  "name": "Bird Dog",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lower back"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "glutes"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Kneel on all fours with your hands under your shoulders and knees under your hips.",
+   "Reach your right arm forward and your left leg back until both are level with your torso.",
+   "Pause, return to all fours, then repeat on the other side."
+  ],
+  "tips": [
+   "Move slowly; your hips should not rock side to side."
+  ],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "push_ups",
+  "name": "Push-Ups",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Start in a high plank with your hands slightly wider than your shoulders.",
+   "Lower your chest towards the floor, keeping your body in one straight line.",
+   "Push back up until your arms are straight."
+  ],
+  "tips": [
+   "Keep your elbows at about 45 degrees from your body.",
+   "Breathe in on the way down, out on the way up."
+  ],
+  "images": [
+   "push_ups/0.jpg",
+   "push_ups/1.jpg"
+  ],
+  "easier": "knee_push_ups",
+  "harder": "decline_push_ups"
+ },
+ {
+  "id": "knee_push_ups",
+  "name": "Knee Push-Ups",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "shoulders"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Start on your hands and knees, hands slightly wider than your shoulders.",
+   "Walk your hands forward until your body is straight from head to knees.",
+   "Lower your chest towards the floor, then push back up."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": "wall_push_ups",
+  "harder": "push_ups"
+ },
+ {
+  "id": "wall_push_ups",
+  "name": "Wall Push-Ups",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "WALL",
+  "focus": [
+   "CHEST",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "triceps",
+   "shoulders"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Stand an arm's length from a wall and place your palms on it at shoulder height.",
+   "Bend your elbows to bring your chest towards the wall.",
+   "Push back to the start, keeping your body straight."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "incline_push_ups"
+ },
+ {
+  "id": "incline_push_ups",
+  "name": "Incline Push-Ups",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "CHEST",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand facing bench or sturdy elevated platform. Place hands on edge of bench or platform, slightly wider than shoulder width.",
+   "Position forefoot back from bench or platform with arms and body straight. Arms should be perpendicular to body. Keeping body straight, lower chest to edge of box or platform by bending arms.",
+   "Push body up until arms are extended. Repeat."
+  ],
+  "tips": [
+   "Use a sturdy chair, sofa arm or kitchen counter."
+  ],
+  "images": [
+   "incline_push_ups/0.jpg",
+   "incline_push_ups/1.jpg"
+  ],
+  "easier": null,
+  "harder": "push_ups"
+ },
+ {
+  "id": "wide_push_ups",
+  "name": "Wide Push-Ups",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "With your hands wide apart, support your body on your toes and hands in a plank position. Your elbows should be extended and your body straight. Do not allow your hips to sag. This will be your starting position.",
+   "To begin, allow the elbows to flex, lowering your chest to the floor as you inhale.",
+   "Using your pectoral muscles, press your upper body back up to the starting position by extending the elbows. Exhale as you perform this step.",
+   "After pausing at the contracted position, repeat the movement for the prescribed amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "wide_push_ups/0.jpg",
+   "wide_push_ups/1.jpg"
+  ],
+  "easier": "knee_push_ups",
+  "harder": null
+ },
+ {
+  "id": "decline_push_ups",
+  "name": "Decline Push-Ups",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "CHAIR",
+  "focus": [
+   "CHEST",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Lie on the floor face down and place your hands about 36 inches apart while holding your torso up at arms length. Move your feet up to a box or bench. This will be your starting position.",
+   "Next, lower yourself downward until your chest almost touches the floor as you inhale.",
+   "Now breathe out and press your upper body back up to the starting position while squeezing your chest.",
+   "After a brief pause at the top contracted position, you can begin to lower yourself downward again for as many repetitions as needed."
+  ],
+  "tips": [],
+  "images": [
+   "decline_push_ups/0.jpg",
+   "decline_push_ups/1.jpg"
+  ],
+  "easier": "push_ups",
+  "harder": null
+ },
+ {
+  "id": "diamond_push_ups",
+  "name": "Diamond Push-Ups",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS",
+   "CHEST"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "chest",
+   "shoulders"
+  ],
+  "measure": "x8",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Lie on the floor face down and place your hands closer than shoulder width for a close hand position. Make sure that you are holding your torso up at arms' length.",
+   "Lower yourself until your chest almost touches the floor as you inhale.",
+   "Using your triceps and some of your pectoral muscles, press your upper body back up to the starting position and squeeze your chest. Breathe out as you perform this step.",
+   "After a second pause at the contracted position, repeat the movement for the prescribed amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "diamond_push_ups/0.jpg",
+   "diamond_push_ups/1.jpg"
+  ],
+  "easier": "knee_push_ups",
+  "harder": null
+ },
+ {
+  "id": "close_wide_push_ups",
+  "name": "Close and Wide Push-Ups",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Lie on the floor face down and body straight with your toes on the floor and the hands wider than shoulder width for a wide hand position and closer than shoulder width for a close hand position. Make sure you are holding your torso up at arms length.",
+   "Lower yourself until your chest almost touches the floor as you inhale.",
+   "Using your pectoral muscles, press your upper body back up to the starting position and squeeze your chest. Breathe out as you perform this step.",
+   "After a second pause at the contracted position, repeat the movement for the prescribed amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "close_wide_push_ups/0.jpg",
+   "close_wide_push_ups/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "plyo_push_ups",
+  "name": "Clap Push-Ups",
+  "category": "PLYOMETRIC",
+  "level": "ADVANCED",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "x8",
+  "perSide": false,
+  "met": 8,
+  "noJump": false,
+  "instructions": [
+   "Move into a prone position on the floor, supporting your weight on your hands and toes.",
+   "Your arms should be fully extended with the hands around shoulder width. Keep your body straight throughout the movement. This will be your starting position.",
+   "Descend by flexing at the elbow, lowering your chest towards the ground.",
+   "At the bottom, reverse the motion by pushing yourself up through elbow extension as quickly as possible. Attempt to push your upper body up until your hands leave the ground.",
+   "Return to the starting position and repeat the exercise.",
+   "For added difficulty, add claps into the movement while you are air borne."
+  ],
+  "tips": [],
+  "images": [
+   "plyo_push_ups/0.jpg",
+   "plyo_push_ups/1.jpg"
+  ],
+  "easier": "push_ups",
+  "harder": null
+ },
+ {
+  "id": "chest_squeeze",
+  "name": "Isometric Chest Squeeze",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "triceps"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.8,
+  "noJump": true,
+  "instructions": [
+   "While either seating or standing, bend your arms at a 90-degree angle and place the palms of your hands together in front of your chest. Tip: Your hands should be open with the palms together and fingers facing forward (perpendicular to your torso).",
+   "Push both hands against each other as you contract your chest. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
+   "Hold for the recommended number of seconds.",
+   "Now release the tension slowly.",
+   "Rest for the recommended amount of time and repeat."
+  ],
+  "tips": [],
+  "images": [
+   "chest_squeeze/0.jpg",
+   "chest_squeeze/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dynamic_chest_stretch",
+  "name": "Dynamic Chest Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "middle back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand with your hands together, arms extended directly in front of you. This will be your starting position.",
+   "Keeping your arms straight, quickly move your arms back as far as possible and back in again, similar to an exaggerated clapping motion. Repeat 5-10 times, increasing speed as you do so."
+  ],
+  "tips": [],
+  "images": [
+   "dynamic_chest_stretch/0.jpg",
+   "dynamic_chest_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "triceps_dips",
+  "name": "Triceps Dips",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "chest",
+   "shoulders"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Sit on the edge of a sturdy chair and grip the edge beside your hips.",
+   "Slide your hips off the chair with your legs out in front of you.",
+   "Bend your elbows to lower your body, then press back up."
+  ],
+  "tips": [
+   "Keep your back close to the chair and your shoulders down away from your ears."
+  ],
+  "images": [
+   "triceps_dips/0.jpg",
+   "triceps_dips/1.jpg"
+  ],
+  "easier": "floor_triceps_dips",
+  "harder": null
+ },
+ {
+  "id": "floor_triceps_dips",
+  "name": "Floor Triceps Dips",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Sit on the floor with your knees bent and your hands behind you, fingers pointing to your feet.",
+   "Lift your hips off the floor.",
+   "Bend your elbows to lower your body, then straighten them to push back up."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "triceps_dips"
+ },
+ {
+  "id": "arm_circles",
+  "name": "Arm Circles",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "traps"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Stand with your arms out to the sides at shoulder height.",
+   "Make small circles forwards, gradually making them bigger.",
+   "Halfway through, reverse the direction."
+  ],
+  "tips": [],
+  "images": [
+   "arm_circles/0.jpg",
+   "arm_circles/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "towel_triceps_extension",
+  "name": "Towel Triceps Extension",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "To begin, stand up with both arms fully extended above the head holding one end of a towel with both hands. Your elbows should be in and the arms perpendicular to the floor with the palms facing each other while your feet should be shoulder width apart from each other. This is the starting position.",
+   "Now communicate with your partner so that he/she can grip the other side of the towel to apply resistance. Keeping your upper arms close to your head (elbows in) and perpendicular to the floor, lower the resistance in a semicircular motion behind your head until your forearms touch your biceps. Tip: The upper arms should remain stationary and only the forearms should move. Breathe in as you perform this step.",
+   "Go back to the starting position by using the triceps to raise the towel. Breathe out as you perform this step.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [
+   "Pull the towel with your lower hand to set the resistance."
+  ],
+  "images": [
+   "towel_triceps_extension/0.jpg",
+   "towel_triceps_extension/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "arm_raises",
+  "name": "Arm Raises",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Stand with your feet hip-width apart and arms by your sides.",
+   "Raise your straight arms in front of you up to overhead.",
+   "Lower them slowly and repeat at a steady pace."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "leg_assisted_curl",
+  "name": "Leg-Resisted Biceps Curl",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Sit on the floor or a chair and hold behind one knee with both hands.",
+   "Let that leg relax so it acts as the weight, and curl it up by bending your elbows.",
+   "Lower slowly. Push down with the leg a little to make it harder. Switch sides."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "plank_up_downs",
+  "name": "Plank Up-Downs",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS",
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "shoulders"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Start in a forearm plank.",
+   "Press up onto one hand, then the other, until you are in a high plank.",
+   "Lower back down one forearm at a time. Alternate the leading arm each rep."
+  ],
+  "tips": [
+   "Widen your feet to stop your hips swaying."
+  ],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "biceps_stretch",
+  "name": "Standing Biceps Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS",
+   "CHEST"
+  ],
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [
+   "chest",
+   "shoulders"
+  ],
+  "measure": "20s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand tall and interlace your fingers behind your back.",
+   "Straighten your arms and turn your palms down.",
+   "Gently lift your arms until you feel a stretch in your biceps and chest. Hold."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "side_arm_raises",
+  "name": "Side Arm Raises",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": false,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Stand tall with your arms by your sides.",
+   "Raise your arms out to the sides until they are level with your shoulders.",
+   "Lower slowly with control and repeat."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "squats",
+  "name": "Squats",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x15",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand with your feet shoulder-width apart, toes turned out slightly.",
+   "Push your hips back and bend your knees as if sitting into a chair.",
+   "Go as low as you comfortably can, keeping your chest up.",
+   "Drive through your heels to stand back up."
+  ],
+  "tips": [
+   "Keep your knees in line with your toes.",
+   "Your heels stay on the floor the whole time."
+  ],
+  "images": [
+   "squats/0.jpg",
+   "squats/1.jpg"
+  ],
+  "easier": "chair_squats",
+  "harder": "squat_jumps"
+ },
+ {
+  "id": "chair_squats",
+  "name": "Chair Sit-to-Stand",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Sit near the front of a sturdy chair with your feet flat and hip-width apart.",
+   "Lean forward slightly and stand up without using your hands.",
+   "Slowly lower yourself back down until you lightly touch the seat."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "squats"
+ },
+ {
+  "id": "walking_lunges",
+  "name": "Walking Lunges",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Begin standing with your feet shoulder width apart and your hands on your hips.",
+   "Step forward with one leg, flexing the knees to drop your hips. Descend until your rear knee nearly touches the ground. Your posture should remain upright, and your front knee should stay above the front foot.",
+   "Drive through the heel of your lead foot and extend both knees to raise yourself back up.",
+   "Step forward with your rear foot, repeating the lunge on the opposite leg."
+  ],
+  "tips": [],
+  "images": [
+   "walking_lunges/0.jpg",
+   "walking_lunges/1.jpg"
+  ],
+  "easier": "reverse_lunges",
+  "harder": null
+ },
+ {
+  "id": "reverse_lunges",
+  "name": "Reverse Lunges",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand tall with your feet hip-width apart.",
+   "Step one foot back and lower until both knees are bent at about 90 degrees.",
+   "Push through your front heel to return to standing."
+  ],
+  "tips": [
+   "Keep your front knee over your ankle."
+  ],
+  "images": [],
+  "easier": null,
+  "harder": "split_jumps"
+ },
+ {
+  "id": "side_lunges",
+  "name": "Side Lunges",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "adductors"
+  ],
+  "secondaryMuscles": [
+   "quadriceps",
+   "glutes"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand with your feet together.",
+   "Take a big step to the side and bend that knee, sitting your hips back. Keep the other leg straight.",
+   "Push off to return to the start."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "curtsy_lunges",
+  "name": "Curtsy Lunges",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT",
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "quadriceps",
+   "adductors"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand with your feet hip-width apart.",
+   "Step your right leg diagonally behind your left, as if curtsying, and bend both knees.",
+   "Return to standing and repeat on the other side."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "sumo_squats",
+  "name": "Sumo Squats",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "adductors"
+  ],
+  "secondaryMuscles": [
+   "quadriceps",
+   "glutes"
+  ],
+  "measure": "x15",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand with your feet wide and your toes turned out.",
+   "Bend your knees and lower your hips straight down, keeping your back upright.",
+   "Squeeze your glutes to stand back up."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "squat_pulses",
+  "name": "Squat Pulses",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Lower into a squat.",
+   "Stay low and pulse up and down a few centimetres at a time.",
+   "Keep your weight in your heels and chest up."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "wall_sit",
+  "name": "Wall Sit",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "WALL",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "calves"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand with your back against a wall and your feet about 60 cm in front of you.",
+   "Slide down the wall until your knees are bent at about 90 degrees.",
+   "Hold the position, keeping your back flat against the wall."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "glute_bridge",
+  "name": "Glute Bridge",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT",
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings"
+  ],
+  "measure": "x15",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your knees bent and your feet flat, hip-width apart.",
+   "Squeeze your glutes and lift your hips until your body is straight from knees to shoulders.",
+   "Pause at the top, then lower slowly."
+  ],
+  "tips": [],
+  "images": [
+   "glute_bridge/0.jpg",
+   "glute_bridge/1.jpg"
+  ],
+  "easier": null,
+  "harder": "single_leg_bridge"
+ },
+ {
+  "id": "single_leg_bridge",
+  "name": "Single-Leg Glute Bridge",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lay on the floor with your feet flat and knees bent.",
+   "Raise one leg off of the ground, pulling the knee to your chest. This will be your starting position.",
+   "Execute the movement by driving through the heel, extending your hip upward and raising your glutes off of the ground.",
+   "Extend as far as possible, pause and then return to the starting position."
+  ],
+  "tips": [],
+  "images": [
+   "single_leg_bridge/0.jpg",
+   "single_leg_bridge/1.jpg"
+  ],
+  "easier": "glute_bridge",
+  "harder": null
+ },
+ {
+  "id": "donkey_kicks",
+  "name": "Donkey Kicks",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings"
+  ],
+  "measure": "x12",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Kneel on all fours with your hands under your shoulders.",
+   "Keeping the knee bent, lift one leg until the thigh is level with your torso.",
+   "Squeeze your glute at the top, lower, and repeat. Switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "donkey_kicks/0.jpg",
+   "donkey_kicks/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "fire_hydrants",
+  "name": "Fire Hydrants",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "abductors"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "x12",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Kneel on all fours.",
+   "Keeping your knee bent at 90 degrees, lift one leg out to the side.",
+   "Lower it with control, finish the set, then switch sides."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "side_leg_lifts",
+  "name": "Side-Lying Leg Lifts",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT",
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "abductors"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "x12",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your side with your legs straight and stacked.",
+   "Lift your top leg up towards the ceiling, keeping your toes pointing forward.",
+   "Lower slowly. Finish the set, then switch sides."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "calf_raises",
+  "name": "Calf Raises",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x20",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Stand tall, holding a wall or chair for balance if you need it.",
+   "Rise up onto the balls of your feet as high as you can.",
+   "Lower your heels slowly back to the floor."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "split_squats",
+  "name": "Split Squats",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand in a long stride with one foot forward and the back heel lifted.",
+   "Lower straight down until your back knee nearly touches the floor.",
+   "Push through your front foot to rise. Finish the set, then switch legs."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "split_jumps"
+ },
+ {
+  "id": "pike_push_ups",
+  "name": "Pike Push-Ups",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "measure": "x8",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Start in a downward-dog shape: hands and feet on the floor, hips high.",
+   "Bend your elbows to lower the top of your head towards the floor.",
+   "Press back up until your arms are straight."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "handstand_push_ups"
+ },
+ {
+  "id": "handstand_push_ups",
+  "name": "Wall Handstand Push-Ups",
+  "category": "STRENGTH",
+  "level": "ADVANCED",
+  "equipment": "WALL",
+  "focus": [
+   "SHOULDERS_BACK",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "measure": "x5",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "With your back to the wall bend at the waist and place both hands on the floor at shoulder width.",
+   "Kick yourself up against the wall with your arms straight. Your body should be upside down with the arms and legs fully extended. Keep your whole body as straight as possible. Tip: If doing this for the first time, have a spotter help you. Also, make sure that you keep facing the wall with your head, rather than looking down.",
+   "Slowly lower yourself to the ground as you inhale until your head almost touches the floor. Tip: It is of utmost importance that you come down slow in order to avoid head injury.",
+   "Push yourself back up slowly as you exhale until your elbows are nearly locked.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "handstand_push_ups/0.jpg",
+   "handstand_push_ups/1.jpg"
+  ],
+  "easier": "pike_push_ups",
+  "harder": null
+ },
+ {
+  "id": "superman",
+  "name": "Superman",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lower back"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie face down with your arms stretched out in front of you.",
+   "Lift your arms, chest and legs off the floor at the same time.",
+   "Hold for a second, then lower with control."
+  ],
+  "tips": [],
+  "images": [
+   "superman/0.jpg",
+   "superman/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "back_extensions",
+  "name": "Floor Back Extensions",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lower back"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie face down with your fingertips lightly touching your temples.",
+   "Keeping your feet on the floor, lift your chest a few centimetres.",
+   "Hold for a moment, then lower slowly."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": "superman"
+ },
+ {
+  "id": "reverse_snow_angels",
+  "name": "Reverse Snow Angels",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "middle back"
+  ],
+  "secondaryMuscles": [
+   "shoulders",
+   "lower back"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie face down with your arms by your sides, palms down.",
+   "Lift your chest and arms slightly off the floor.",
+   "Sweep your arms out and overhead in a wide arc, then back to your sides."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "prone_y_raises",
+  "name": "Prone Y Raises",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "middle back"
+  ],
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie face down with your arms overhead in a Y shape, thumbs up.",
+   "Squeeze your shoulder blades and lift your arms off the floor.",
+   "Hold briefly, then lower."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "wall_angels",
+  "name": "Wall Angels",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "WALL",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "middle back"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Stand with your back, head and bottom against a wall.",
+   "Raise your arms into a goal-post shape with the backs of your hands on the wall.",
+   "Slide your arms up overhead and back down, keeping contact with the wall."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "shoulder_taps",
+  "name": "Plank Shoulder Taps",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK",
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "triceps"
+  ],
+  "measure": "x16",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Start in a high plank with your feet a little wider than hip-width.",
+   "Lift one hand and tap the opposite shoulder.",
+   "Place it back down and alternate, keeping your hips still."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "inverted_row",
+  "name": "Inverted Row",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "BAR",
+  "focus": [
+   "SHOULDERS_BACK",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "middle back"
+  ],
+  "secondaryMuscles": [
+   "lats"
+  ],
+  "measure": "x8",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Lie under a sturdy table or a low bar and grip its edge with your hands shoulder-width apart.",
+   "Straighten your body so only your heels touch the floor.",
+   "Pull your chest up to the edge, squeezing your shoulder blades together.",
+   "Lower yourself with control until your arms are straight."
+  ],
+  "tips": [
+   "Test that the table can take your weight before you start."
+  ],
+  "images": [
+   "inverted_row/0.jpg",
+   "inverted_row/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "pull_ups",
+  "name": "Pull-Ups",
+  "category": "STRENGTH",
+  "level": "ADVANCED",
+  "equipment": "BAR",
+  "focus": [
+   "SHOULDERS_BACK",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "middle back"
+  ],
+  "measure": "x6",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Grab the pull-up bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width.",
+   "As you have both arms extended in front of you holding the bar at the chosen grip width, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position.",
+   "Pull your torso up until the bar touches your upper chest by drawing the shoulders and the upper arms down and back. Exhale as you perform this portion of the movement. Tip: Concentrate on squeezing the back muscles once you reach the full contracted position. The upper torso should remain stationary as it moves through space and only the arms should move. The forearms should do no other work other than hold the bar.",
+   "After a second on the contracted position, start to inhale and slowly lower your torso back to the starting position when your arms are fully extended and the lats are fully stretched.",
+   "Repeat this motion for the prescribed amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "pull_ups/0.jpg",
+   "pull_ups/1.jpg"
+  ],
+  "easier": "inverted_row",
+  "harder": null
+ },
+ {
+  "id": "chin_ups",
+  "name": "Chin-Ups",
+  "category": "STRENGTH",
+  "level": "ADVANCED",
+  "equipment": "BAR",
+  "focus": [
+   "ARMS",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "forearms",
+   "middle back"
+  ],
+  "measure": "x6",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Grab the pull-up bar with the palms facing your torso and a grip closer than the shoulder width.",
+   "As you have both arms extended in front of you holding the bar at the chosen grip width, keep your torso as straight as possible while creating a curvature on your lower back and sticking your chest out. This is your starting position. Tip: Keeping the torso as straight as possible maximizes biceps stimulation while minimizing back involvement.",
+   "As you breathe out, pull your torso up until your head is around the level of the pull-up bar. Concentrate on using the biceps muscles in order to perform the movement. Keep the elbows close to your body. Tip: The upper torso should remain stationary as it moves through space and only the arms should move. The forearms should do no other work other than hold the bar.",
+   "After a second of squeezing the biceps in the contracted position, slowly lower your torso back to the starting position; when your arms are fully extended. Breathe in as you perform this portion of the movement.",
+   "Repeat this motion for the prescribed amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "chin_ups/0.jpg",
+   "chin_ups/1.jpg"
+  ],
+  "easier": "inverted_row",
+  "harder": null
+ },
+ {
+  "id": "dumbbell_curl",
+  "name": "Dumbbell Biceps Curl",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [
+   "forearms"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand up straight with a dumbbell in each hand at arm's length. Keep your elbows close to your torso and rotate the palms of your hands until they are facing forward. This will be your starting position.",
+   "Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps. Continue to raise the weights until your biceps are fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a brief pause as you squeeze your biceps.",
+   "Then, inhale and slowly begin to lower the dumbbells back to the starting position.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_curl/0.jpg",
+   "dumbbell_curl/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "hammer_curl",
+  "name": "Hammer Curl",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "biceps"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand up with your torso upright and a dumbbell on each hand being held at arms length. The elbows should be close to the torso.",
+   "The palms of the hands should be facing your torso. This will be your starting position.",
+   "Now, while holding your upper arm stationary, exhale and curl the weight forward while contracting the biceps. Continue to raise the weight until the biceps are fully contracted and the dumbbell is at shoulder level. Hold the contracted position for a brief moment as you squeeze the biceps. Tip: Focus on keeping the elbow stationary and only moving your forearm.",
+   "After the brief pause, inhale and slowly begin the lower the dumbbells back down to the starting position.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "hammer_curl/0.jpg",
+   "hammer_curl/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dumbbell_kickback",
+  "name": "Triceps Kickback",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Start with a dumbbell in each hand and your palms facing your torso. Keep your back straight with a slight bend in the knees and bend forward at the waist. Your torso should be almost parallel to the floor. Make sure to keep your head up. Your upper arms should be close to your torso and parallel to the floor. Your forearms should be pointed towards the floor as you hold the weights. There should be a 90-degree angle formed between your forearm and upper arm. This is your starting position.",
+   "Now, while keeping your upper arms stationary, exhale and use your triceps to lift the weights until the arm is fully extended. Focus on moving the forearm.",
+   "After a brief pause at the top contraction, inhale and slowly lower the dumbbells back down to the starting position.",
+   "Repeat the movement for the prescribed amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_kickback/0.jpg",
+   "dumbbell_kickback/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dumbbell_shoulder_press",
+  "name": "Dumbbell Shoulder Press",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "SHOULDERS_BACK",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand or sit tall with a dumbbell in each hand at shoulder height, palms facing forward.",
+   "Press the weights straight up until your arms are extended overhead.",
+   "Lower them slowly back to shoulder height."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_shoulder_press/0.jpg",
+   "dumbbell_shoulder_press/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "lateral_raise",
+  "name": "Lateral Raise",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Pick a couple of dumbbells and stand with a straight torso and the dumbbells by your side at arms length with the palms of the hand facing you. This will be your starting position.",
+   "While maintaining the torso in a stationary position (no swinging), lift the dumbbells to your side with a slight bend on the elbow and the hands slightly tilted forward as if pouring water in a glass. Continue to go up until you arms are parallel to the floor. Exhale as you execute this movement and pause for a second at the top.",
+   "Lower the dumbbells back down slowly to the starting position as you inhale.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "lateral_raise/0.jpg",
+   "lateral_raise/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dumbbell_row",
+  "name": "Bent-Over Dumbbell Row",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "SHOULDERS_BACK",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "middle back"
+  ],
+  "secondaryMuscles": [
+   "biceps",
+   "lats",
+   "shoulders"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "With a dumbbell in each hand (palms facing your torso), bend your knees slightly and bring your torso forward by bending at the waist; as you bend make sure to keep your back straight until it is almost parallel to the floor. Tip: Make sure that you keep the head up. The weights should hang directly in front of you as your arms hang perpendicular to the floor and your torso. This is your starting position.",
+   "While keeping the torso stationary, lift the dumbbells to your side (as you breathe out), keeping the elbows close to the body (do not exert any force with the forearm other than holding the weights). On the top contracted position, squeeze the back muscles and hold for a second.",
+   "Slowly lower the weight again to the starting position as you inhale.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_row/0.jpg",
+   "dumbbell_row/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dumbbell_squat",
+  "name": "Dumbbell Squat",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes",
+   "hamstrings",
+   "lower back"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand up straight while holding a dumbbell on each hand (palms facing the side of your legs).",
+   "Position your legs using a shoulder width medium stance with the toes slightly pointed out. Keep your head up at all times as looking down will get you off balance and also maintain a straight back. This will be your starting position. Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances discussed in the foot stances section.",
+   "Begin to slowly lower your torso by bending the knees as you maintain a straight posture with the head up. Continue down until your thighs are parallel to the floor. Tip: If you performed the exercise correctly, the front of the knees should make an imaginary straight line with the toes that is perpendicular to the front. If your knees are past that imaginary line (if they are past your toes) then you are placing undue stress on the knee and the exercise has been performed incorrectly.",
+   "Begin to raise your torso as you exhale by pushing the floor with the heel of your foot mainly as you straighten the legs again and go back to the starting position.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_squat/0.jpg",
+   "dumbbell_squat/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dumbbell_lunges",
+  "name": "Dumbbell Lunges",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Stand with your torso upright holding two dumbbells in your hands by your sides. This will be your starting position.",
+   "Step forward with your right leg around 2 feet or so from the foot being left stationary behind and lower your upper body down, while keeping the torso upright and maintaining balance. Inhale as you go down. Note: As in the other exercises, do not allow your knee to go forward beyond your toes as you come down, as this will put undue stress on the knee joint. Make sure that you keep your front shin perpendicular to the ground.",
+   "Using mainly the heel of your foot, push up and go back to the starting position as you exhale.",
+   "Repeat the movement for the recommended amount of repetitions and then perform with the left leg."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_lunges/0.jpg",
+   "dumbbell_lunges/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dumbbell_floor_press",
+  "name": "Dumbbell Floor Press",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "CHEST",
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "chest",
+   "shoulders"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Lay on the floor holding dumbbells in your hands. Your knees can be bent. Begin with the weights fully extended above you.",
+   "Lower the weights until your upper arm comes in contact with the floor. You can tuck your elbows to emphasize triceps size and strength, or to focus on your chest angle your arms to the side.",
+   "Pause at the bottom, and then bring the weight together at the top by extending through the elbows."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_floor_press/0.jpg",
+   "dumbbell_floor_press/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "reverse_flyes",
+  "name": "Reverse Fly",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Hold a light dumbbell in each hand and hinge forward at the hips with a flat back.",
+   "Let the weights hang below your chest, palms facing each other.",
+   "With a slight bend in your elbows, raise your arms out to the sides to shoulder height.",
+   "Lower them slowly."
+  ],
+  "tips": [],
+  "images": [
+   "reverse_flyes/0.jpg",
+   "reverse_flyes/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "arnold_press",
+  "name": "Arnold Press",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "measure": "x10",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Sit on an exercise bench with back support and hold two dumbbells in front of you at about upper chest level with your palms facing your body and your elbows bent. Tip: Your arms should be next to your torso. The starting position should look like the contracted portion of a dumbbell curl.",
+   "Now to perform the movement, raise the dumbbells as you rotate the palms of your hands until they are facing forward.",
+   "Continue lifting the dumbbells until your arms are extended above you in straight arm position. Breathe out as you perform this portion of the movement.",
+   "After a second pause at the top, begin to lower the dumbbells to the original position by rotating the palms of your hands towards you. Tip: The left arm will be rotated in a counter clockwise manner while the right one will be rotated clockwise. Breathe in as you perform this portion of the movement.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "arnold_press/0.jpg",
+   "arnold_press/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dumbbell_calf_raise",
+  "name": "Dumbbell Calf Raise",
+  "category": "STRENGTH",
+  "level": "INTERMEDIATE",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x15",
+  "perSide": false,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Stand with your torso upright holding two dumbbells in your hands by your sides. Place the ball of the foot on a sturdy and stable wooden board (that is around 2-3 inches tall) while your heels extend off and touch the floor. This will be your starting position.",
+   "With the toes pointing either straight (to hit all parts equally), inwards (for emphasis on the outer head) or outwards (for emphasis on the inner head), raise the heels off the floor as you exhale by contracting the calves. Hold the top contraction for a second.",
+   "As you inhale, go back to the starting position by slowly lowering the heels.",
+   "Repeat for the recommended amount of times."
+  ],
+  "tips": [],
+  "images": [
+   "dumbbell_calf_raise/0.jpg",
+   "dumbbell_calf_raise/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "plie_squat",
+  "name": "Dumbbell Plié Squat",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "DUMBBELL",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "calves",
+   "glutes",
+   "hamstrings"
+  ],
+  "measure": "x12",
+  "perSide": false,
+  "met": 5,
+  "noJump": true,
+  "instructions": [
+   "Hold a dumbbell at the base with both hands and stand straight up. Move your legs so that they are wider than shoulder width apart from each other with your knees slightly bent.",
+   "Your toes should be facing out. Note: Your arms should be stationary while performing the exercise. This is the starting position.",
+   "Slowly bend the knees and lower your legs until your thighs are parallel to the floor. Make sure to inhale as this is the eccentric part of the exercise.",
+   "Press mainly with the heel of the foot to bring the body back to the starting position while exhaling.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "plie_squat/0.jpg",
+   "plie_squat/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "cat_cow",
+  "name": "Cat-Cow",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lower back"
+  ],
+  "secondaryMuscles": [
+   "middle back",
+   "traps"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Kneel on all fours with a flat back.",
+   "Breathe in as you drop your belly and lift your chest and tailbone.",
+   "Breathe out as you round your spine towards the ceiling and tuck your chin.",
+   "Flow slowly between the two."
+  ],
+  "tips": [],
+  "images": [
+   "cat_cow/0.jpg",
+   "cat_cow/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "childs_pose",
+  "name": "Child's Pose",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lower back"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "middle back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Kneel and sit back on your heels with your knees apart.",
+   "Fold forward and stretch your arms out in front of you on the floor.",
+   "Rest your forehead down and breathe slowly."
+  ],
+  "tips": [],
+  "images": [
+   "childs_pose/0.jpg",
+   "childs_pose/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "cobra_stretch",
+  "name": "Cobra Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS",
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "lower back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie face down with your hands under your shoulders.",
+   "Gently press your chest up, keeping your hips on the floor.",
+   "Relax your shoulders down and hold, breathing slowly."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "hamstring_stretch",
+  "name": "Hamstring Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with one leg extended above you, with the hip at ninety degrees. Keep the other leg flat on the floor.",
+   "Loop a belt, band, or rope over the ball of your foot. This will be your starting position.",
+   "Pull on the belt to create tension in the calves and hamstrings. Hold this stretch for 10-30 seconds, and repeat with the other leg."
+  ],
+  "tips": [],
+  "images": [
+   "hamstring_stretch/0.jpg",
+   "hamstring_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "quad_stretch",
+  "name": "Quad Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Start off by lying on your right side, with your right knee bent at a 90-degree angle resting on the floor in front of you (this stabilizes the torso).",
+   "Bend your left knee behind you and hold your left foot with your left hand. To stretch your hip flexor, press your left hip forward as you push your left foot back into your hand. Switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "quad_stretch/0.jpg",
+   "quad_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "calf_stretch",
+  "name": "Calf Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "WALL",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand facing a wall from several feet away. Stagger your stance, placing one foot forward.",
+   "Lean forward and rest your hands on the wall, keeping your heel, hip and head in a straight line.",
+   "Attempt to keep your heel on the ground. Hold for 10-20 seconds and then switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "calf_stretch/0.jpg",
+   "calf_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "hip_flexor_stretch",
+  "name": "Kneeling Hip Flexor Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "quadriceps"
+  ],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Kneel on a mat and bring your right knee up so the bottom of your foot is on the floor and extend your left leg out behind you so the top of your foot is on the floor.",
+   "Shift your weight forward until you feel a stretch in your hip. Hold for 15 seconds, then repeat for your other side."
+  ],
+  "tips": [],
+  "images": [
+   "hip_flexor_stretch/0.jpg",
+   "hip_flexor_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "butterfly_stretch",
+  "name": "Butterfly Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "adductors"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Sit tall with the soles of your feet together and your knees falling out to the sides.",
+   "Hold your feet and gently lean forward from your hips.",
+   "Hold, letting your knees relax towards the floor."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "knees_to_chest",
+  "name": "Knees to Chest",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lower back"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie down on your back and pull both knees up to your chest.",
+   "Hold your arms under the knees, not over (that would put to much pressure on your knee joints).",
+   "Slowly pull the knees toward your shoulders. This also stretches your buttocks muscles."
+  ],
+  "tips": [],
+  "images": [
+   "knees_to_chest/0.jpg",
+   "knees_to_chest/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "glute_stretch",
+  "name": "Figure-4 Glute Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "hamstrings"
+  ],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your knees bent and feet flat.",
+   "Cross your right ankle over your left knee.",
+   "Lift your left foot and pull your left thigh towards your chest until you feel the stretch.",
+   "Hold, then switch sides."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "spinal_twist",
+  "name": "Lying Spinal Twist",
+  "category": "STRETCH",
+  "level": "ADVANCED",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "abductors"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your arms out to the sides.",
+   "Bring one knee up and let it drop across your body towards the floor.",
+   "Keep both shoulders down and look the other way. Hold, then switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "spinal_twist/0.jpg",
+   "spinal_twist/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "shoulder_stretch",
+  "name": "Shoulder Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [],
+  "measure": "20s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Reach your left arm across your body and hold it straight."
+  ],
+  "tips": [],
+  "images": [
+   "shoulder_stretch/0.jpg",
+   "shoulder_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "triceps_stretch",
+  "name": "Triceps Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "triceps"
+  ],
+  "secondaryMuscles": [
+   "lats"
+  ],
+  "measure": "20s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Reach your hand behind your head, grasp your elbow and gently pull. Hold for 10 to 20 seconds, then switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "triceps_stretch/0.jpg",
+   "triceps_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "chest_opener",
+  "name": "Chest Opener",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "CHEST"
+  ],
+  "primaryMuscles": [
+   "chest"
+  ],
+  "secondaryMuscles": [
+   "shoulders"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand up straight.",
+   "Place both hands on your lower back, fingers pointing downward and elbows out.",
+   "Then gently pull your elbows back aiming to touch them together."
+  ],
+  "tips": [],
+  "images": [
+   "chest_opener/0.jpg",
+   "chest_opener/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "side_neck_stretch",
+  "name": "Side Neck Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "neck"
+  ],
+  "secondaryMuscles": [],
+  "measure": "20s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Start with your shoulders relaxed, gently tilt your head towards your shoulder.",
+   "Assist stretch with a gentle pull on the side of the head."
+  ],
+  "tips": [],
+  "images": [
+   "side_neck_stretch/0.jpg",
+   "side_neck_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "chin_to_chest",
+  "name": "Chin to Chest Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "neck"
+  ],
+  "secondaryMuscles": [
+   "traps"
+  ],
+  "measure": "20s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Get into a seated position on the floor.",
+   "Place both hands at the rear of your head, fingers interlocked, thumbs pointing down and elbows pointing straight ahead. Slowly pull your head down to your chest. Hold for 20-30 seconds."
+  ],
+  "tips": [],
+  "images": [
+   "chin_to_chest/0.jpg",
+   "chin_to_chest/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "standing_side_stretch",
+  "name": "Standing Side Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [],
+  "measure": "20s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Take a slightly wider than hip distance stance with your knees slightly bent.",
+   "Place your right hand on your right hip to support the spine.",
+   "Raise your left arm in a vertical line and place your left hand behind your head. Keep it there as you incline your torso to the right.",
+   "Keep your weight evenly distributed between both legs (don't lean into your left hip). Switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "standing_side_stretch/0.jpg",
+   "standing_side_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "worlds_greatest_stretch",
+  "name": "World's Greatest Stretch",
+  "category": "STRETCH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "calves",
+   "glutes",
+   "quadriceps"
+  ],
+  "measure": "x5",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "This is a three-part stretch. Begin by lunging forward, with your front foot flat on the ground and on the toes of your back foot. With your knees bent, squat down until your knee is almost touching the ground. Keep your torso erect, and hold this position for 10-20 seconds.",
+   "Now, place the arm on the same side as your front leg on the ground, with the elbow next to the foot. Your other hand should be placed on the ground, parallel to your lead leg, to help support you during this portion of the stretch.",
+   "After 10-20 seconds, place your hands on either side of your front foot. Raise the toes of the front foot off of the ground, and straighten your leg. You may need to reposition your rear leg to do so. Hold for 10-20 seconds, and then repeat the entire sequence for the other side."
+  ],
+  "tips": [],
+  "images": [
+   "worlds_greatest_stretch/0.jpg",
+   "worlds_greatest_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "upper_back_stretch",
+  "name": "Upper Back Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "middle back"
+  ],
+  "secondaryMuscles": [
+   "middle back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Clasp fingers together with your thumbs pointing down, round your shoulders as you reach your hands forward."
+  ],
+  "tips": [],
+  "images": [
+   "upper_back_stretch/0.jpg",
+   "upper_back_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "overhead_stretch",
+  "name": "Overhead Reach",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ABS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "chest",
+   "forearms",
+   "lats",
+   "triceps"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Standing straight up, lace your fingers together and open your palms to the ceiling. Keep your shoulders down as you extend your arms up.",
+   "To create a full torso stretch, pull your tailbone down and stabilize your torso as you do this. Stretch the muscles on both the front and the back of the torso."
+  ],
+  "tips": [],
+  "images": [
+   "overhead_stretch/0.jpg",
+   "overhead_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "wrist_circles",
+  "name": "Wrist Circles",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "forearms"
+  ],
+  "secondaryMuscles": [],
+  "measure": "20s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Start by standing straight with your feet being shoulder width apart from each other. Elevate your arms to the side of you until they are fully extended and parallel to the floor at a height that is evenly aligned with your shoulders. Tip: Your torso and arms should form the letter \"T: Your palms should be facing down. This is the starting position.",
+   "Keeping your entire body stationary except for the wrists, begin to rotate both wrists forward in a circular motion. Tip: Pretend that you are trying to draw circles by using your hands as the brush. Breathe normally as you perform this exercise.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "wrist_circles/0.jpg",
+   "wrist_circles/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "ankle_circles",
+  "name": "Ankle Circles",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [],
+  "measure": "20s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand on one leg, holding a wall or chair for balance.",
+   "Lift the other foot slightly and draw slow circles with your toes.",
+   "Halfway through, reverse direction, then switch feet."
+  ],
+  "tips": [],
+  "images": [
+   "ankle_circles/0.jpg",
+   "ankle_circles/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "hip_circles",
+  "name": "Hip Circles",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT",
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "abductors"
+  ],
+  "secondaryMuscles": [
+   "adductors"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Begin standing on one leg, holding to a vertical support.",
+   "Raise the unsupported knee to 90 degrees. This will be your starting position.",
+   "Open the hip as far as possible, attempting to make a big circle with your knee.",
+   "Perform this movement slowly for a number of repetitions, and repeat on the other side."
+  ],
+  "tips": [],
+  "images": [
+   "hip_circles/0.jpg",
+   "hip_circles/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "shoulder_circles",
+  "name": "Shoulder Rolls",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "traps"
+  ],
+  "measure": "20s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "With shoulders relaxed and arms resting loosely at your sides (or in your lap if you're seated), gently roll your shoulders forward, up, back, and down.",
+   "Reverse direction. You can do this exercise alternating shoulders or both at the same time."
+  ],
+  "tips": [],
+  "images": [
+   "shoulder_circles/0.jpg",
+   "shoulder_circles/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "toe_touches",
+  "name": "Standing Toe Touches",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "calves"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand with some space in front and behind you.",
+   "Bend at the waist, keeping your legs straight, until you can relax and let your upper body hang down in front of you. Let your arms and hands hang down naturally. Hold for 10 to 20 seconds."
+  ],
+  "tips": [],
+  "images": [
+   "toe_touches/0.jpg",
+   "toe_touches/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "pelvic_tilt_bridge",
+  "name": "Pelvic Tilt into Bridge",
+  "category": "STRETCH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK",
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "lower back"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x10",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie down with your feet on the floor, heels directly under your knees.",
+   "Lift only your tailbone to the ceiling to stretch your lower back. (Don't lift the entire spine yet.) Pull in your stomach.",
+   "To go into a bridge, lift the entire spine except the neck."
+  ],
+  "tips": [],
+  "images": [
+   "pelvic_tilt_bridge/0.jpg",
+   "pelvic_tilt_bridge/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "knee_circles",
+  "name": "Knee Circles",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "calves"
+  ],
+  "secondaryMuscles": [
+   "hamstrings",
+   "quadriceps"
+  ],
+  "measure": "20s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand with your legs together and hands by your waist.",
+   "Now move your knees in a circular motion as you breathe normally.",
+   "Repeat for the recommended amount of repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "knee_circles/0.jpg",
+   "knee_circles/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "seated_hamstring_stretch",
+  "name": "Seated Hamstring Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "calves"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Sit on a mat with your right leg extended in front of you and your left leg bent with your foot against your right inner thigh.",
+   "Lean forward from your hips and reach for your ankle until you feel a stretch in your hamstring. Hold for 15 seconds, then repeat for your other side."
+  ],
+  "tips": [],
+  "images": [
+   "seated_hamstring_stretch/0.jpg",
+   "seated_hamstring_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "chair_back_stretch",
+  "name": "Seated Back Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [
+   "lower back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Sit upright on a chair.",
+   "Bend to one side with your arm over your head. You can hold onto the chair with your free hand.",
+   "Hold for 10 seconds, and repeat for your other side."
+  ],
+  "tips": [],
+  "images": [
+   "chair_back_stretch/0.jpg",
+   "chair_back_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "seated_glute_stretch",
+  "name": "Seated Glute Stretch",
+  "category": "STRETCH",
+  "level": "ADVANCED",
+  "equipment": "CHAIR",
+  "focus": [
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "glutes"
+  ],
+  "secondaryMuscles": [
+   "adductors"
+  ],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Sit tall on a chair and cross one ankle over the opposite knee.",
+   "Keeping your back straight, lean forward from your hips until you feel the stretch.",
+   "Hold, then switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "seated_glute_stretch/0.jpg",
+   "seated_glute_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "windmills",
+  "name": "Windmills",
+  "category": "STRETCH",
+  "level": "INTERMEDIATE",
+  "equipment": "NONE",
+  "focus": [
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "abductors"
+  ],
+  "secondaryMuscles": [
+   "glutes",
+   "hamstrings",
+   "lower back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with your arms extended out to the sides and your legs straight. This will be your starting position.",
+   "Lift one leg and quickly cross it over your body, attempting to touch the ground near the opposite hand.",
+   "Return to the starting position, and repeat with the opposite leg. Continue to alternate for 10-20 repetitions."
+  ],
+  "tips": [],
+  "images": [
+   "windmills/0.jpg",
+   "windmills/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "dynamic_back_stretch",
+  "name": "Dynamic Back Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "lats"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand with your feet shoulder width apart. This will be your starting position.",
+   "Keeping your arms straight, swing them straight up in front of you 5-10 times, increasing the range of motion each time until your arms are above your head."
+  ],
+  "tips": [],
+  "images": [
+   "dynamic_back_stretch/0.jpg",
+   "dynamic_back_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "standing_hip_flexor",
+  "name": "Standing Hip Flexor Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [],
+  "measure": "30s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand up straight with the spine vertical, the left foot slightly in front of the right.",
+   "Bend both knees and lift the back heel off the floor as you press the right hip forward. You can't get a thorough, deep stretch in this position, however, because it's hard to relax the hip flexor and stand on it at the same time. Switch sides."
+  ],
+  "tips": [],
+  "images": [
+   "standing_hip_flexor/0.jpg",
+   "standing_hip_flexor/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "leg_swings",
+  "name": "Front Leg Swings",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x10",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand next to a chair or other support, holding on with one hand.",
+   "Swing your leg forward, keeping the leg straight. Continue with a downward swing, bringing the leg as far back as your flexibility allows. Repeat 5-10 times, and then switch legs."
+  ],
+  "tips": [],
+  "images": [
+   "leg_swings/0.jpg",
+   "leg_swings/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "middle_back_stretch",
+  "name": "Middle Back Stretch",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "middle back"
+  ],
+  "secondaryMuscles": [
+   "abdominals",
+   "lats",
+   "lower back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Stand so your feet are shoulder width apart and your hands are on your hips.",
+   "Twist at your waist until you feel a stretch. Hold for 10 to 15 seconds, then twist to the other side."
+  ],
+  "tips": [],
+  "images": [
+   "middle_back_stretch/0.jpg",
+   "middle_back_stretch/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "neck_isometrics",
+  "name": "Neck Side Press",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "SHOULDERS_BACK"
+  ],
+  "primaryMuscles": [
+   "neck"
+  ],
+  "secondaryMuscles": [],
+  "measure": "20s",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "With your head and neck in a neutral position (normal position with head erect facing forward), place your left hand on the left side of your head.",
+   "Now gently push towards the left as you contract the left neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
+   "Hold for the recommended number of seconds.",
+   "Now release the tension slowly.",
+   "Rest for the recommended amount of time and repeat with your right hand placed on the right side of your head."
+  ],
+  "tips": [],
+  "images": [
+   "neck_isometrics/0.jpg",
+   "neck_isometrics/1.jpg"
+  ],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "clamshells",
+  "name": "Clamshells",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "BUTT"
+  ],
+  "primaryMuscles": [
+   "abductors"
+  ],
+  "secondaryMuscles": [
+   "glutes"
+  ],
+  "measure": "x12",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your side with your knees bent and feet together.",
+   "Keeping your feet touching, lift your top knee as far as is comfortable.",
+   "Lower slowly. Finish the set, then switch sides."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "heel_slides",
+  "name": "Heel Slides",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "hamstrings"
+  ],
+  "secondaryMuscles": [
+   "quadriceps"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with both legs straight.",
+   "Slowly slide one heel towards your bottom, bending the knee as far as is comfortable.",
+   "Slide it back out straight. Finish the set, then switch legs."
+  ],
+  "tips": [
+   "Move within a pain-free range; this is about mobility, not effort."
+  ],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "straight_leg_raise",
+  "name": "Straight Leg Raise",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "NONE",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "abdominals"
+  ],
+  "measure": "x10",
+  "perSide": true,
+  "met": 3.8,
+  "noJump": true,
+  "instructions": [
+   "Lie on your back with one knee bent and the other leg straight.",
+   "Tighten the thigh of the straight leg and lift it to the height of the bent knee.",
+   "Lower slowly. Finish the set, then switch legs."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "seated_knee_extension",
+  "name": "Seated Knee Extension",
+  "category": "STRENGTH",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "LEGS"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [],
+  "measure": "x12",
+  "perSide": true,
+  "met": 3,
+  "noJump": true,
+  "instructions": [
+   "Sit tall on a chair with your feet flat on the floor.",
+   "Straighten one knee until the leg is level with the seat.",
+   "Hold for a second, then lower slowly. Finish the set, then switch legs."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "seated_march",
+  "name": "Seated March",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "LEGS",
+   "FULL_BODY"
+  ],
+  "primaryMuscles": [
+   "quadriceps"
+  ],
+  "secondaryMuscles": [
+   "abdominals"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.5,
+  "noJump": true,
+  "instructions": [
+   "Sit tall near the front of a chair.",
+   "Lift one knee as high as is comfortable, lower it, then lift the other.",
+   "Pump your arms as you march."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "seated_torso_twist",
+  "name": "Seated Torso Twist",
+  "category": "STRETCH",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "ABS"
+  ],
+  "primaryMuscles": [
+   "abdominals"
+  ],
+  "secondaryMuscles": [
+   "lower back"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.3,
+  "noJump": true,
+  "instructions": [
+   "Sit tall on a chair with your feet flat and arms crossed over your chest.",
+   "Rotate your upper body to one side as far as is comfortable.",
+   "Return to the centre and rotate to the other side."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ },
+ {
+  "id": "seated_punches",
+  "name": "Seated Punches",
+  "category": "CARDIO",
+  "level": "BEGINNER",
+  "equipment": "CHAIR",
+  "focus": [
+   "ARMS"
+  ],
+  "primaryMuscles": [
+   "shoulders"
+  ],
+  "secondaryMuscles": [
+   "triceps"
+  ],
+  "measure": "30s",
+  "perSide": false,
+  "met": 2.8,
+  "noJump": true,
+  "instructions": [
+   "Sit tall near the front of a chair with your fists by your chin.",
+   "Punch forward with one arm, then the other, rotating slightly through your torso.",
+   "Keep a quick, steady pace."
+  ],
+  "tips": [],
+  "images": [],
+  "easier": null,
+  "harder": null
+ }
+]

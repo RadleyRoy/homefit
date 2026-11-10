@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeFit</string>
+    <string name="reminder_channel_name">Workout reminders</string>
+    <string name="reminder_channel_description">The daily nudges you set up under Me → Reminders.</string>
+    <string name="workout_channel_name">Active workout</string>
+    <string name="workout_channel_description">Keeps the timer and voice coach running while the screen is off.</string>
+    <string name="widget_description">Weekly goal, streak and a shortcut to today\'s workout.</string>
+</resources>

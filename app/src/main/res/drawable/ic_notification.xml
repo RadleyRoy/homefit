@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Status-bar glyph: the launcher's house-and-dumbbell mark in white (the system tints it),
+  cropped to the artwork and drawn with a heavier stroke so it survives 24dp.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="580"
+    android:viewportHeight="580">
+    <group
+        android:translateX="-222"
+        android:translateY="-239">
+        <path
+            android:pathData="M282,492 L512,296 L742,492 V712 Q742,762 692,762 H332 Q282,762 282,712 Z"
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="58"
+            android:strokeLineJoin="round" />
+        <group
+            android:translateX="512"
+            android:translateY="606">
+            <path
+                android:fillColor="#FFFFFFFF"
+                android:pathData="M-74.4,-12.4 H74.4 A12.4,12.4 0 0 1 86.8,0 V0 A12.4,12.4 0 0 1 74.4,12.4 H-74.4 A12.4,12.4 0 0 1 -86.8,0 V0 A12.4,12.4 0 0 1 -74.4,-12.4 Z M-114.08,-69.44 H-104.16 A17.36,17.36 0 0 1 -86.8,-52.08 V52.08 A17.36,17.36 0 0 1 -104.16,69.44 H-114.08 A17.36,17.36 0 0 1 -131.44,52.08 V-52.08 A17.36,17.36 0 0 1 -114.08,-69.44 Z M-153.76,-47.12 H-146.32 A14.88,14.88 0 0 1 -131.44,-32.24 V32.24 A14.88,14.88 0 0 1 -146.32,47.12 H-153.76 A14.88,14.88 0 0 1 -168.64,32.24 V-32.24 A14.88,14.88 0 0 1 -153.76,-47.12 Z M104.16,-69.44 H114.08 A17.36,17.36 0 0 1 131.44,-52.08 V52.08 A17.36,17.36 0 0 1 114.08,69.44 H104.16 A17.36,17.36 0 0 1 86.8,52.08 V-52.08 A17.36,17.36 0 0 1 104.16,-69.44 Z M146.32,-47.12 H153.76 A14.88,14.88 0 0 1 168.64,-32.24 V32.24 A14.88,14.88 0 0 1 153.76,47.12 H146.32 A14.88,14.88 0 0 1 131.44,32.24 V-32.24 A14.88,14.88 0 0 1 146.32,-47.12 Z" />
+        </group>
+    </group>
+</vector>
