@@ -18,9 +18,11 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Lightbulb
+import androidx.compose.material.icons.rounded.PlayCircle
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Text
@@ -32,12 +34,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.radley.homefit.data.content.Content
 import com.radley.homefit.data.content.Equipment
 import com.radley.homefit.data.content.Exercise
 import com.radley.homefit.data.content.Measure
+import com.radley.homefit.platform.ExerciseVideos
 import com.radley.homefit.ui.components.ExerciseImage
 import com.radley.homefit.ui.components.Format
 import com.radley.homefit.ui.components.LevelBolts
@@ -57,6 +61,7 @@ fun ExerciseSheet(
     onDismiss: () -> Unit,
 ) {
     var shown by remember(exercise.id) { mutableStateOf(exercise) }
+    val context = LocalContext.current
     ModalBottomSheet(onDismissRequest = onDismiss, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) {
         Column(
             Modifier
@@ -81,6 +86,12 @@ fun ExerciseSheet(
                 shown.focus.forEach { Pill(it.label, it.color) }
                 if (shown.equipment != Equipment.NONE) Pill(shown.equipment.label, MaterialTheme.colorScheme.onSurfaceVariant)
                 if (!shown.noJump) Pill("Jumping", MaterialTheme.colorScheme.secondary)
+            }
+            Spacer(Modifier.height(12.dp))
+            OutlinedButton(onClick = { ExerciseVideos.open(context, shown.name) }, modifier = Modifier.fillMaxWidth()) {
+                Icon(Icons.Rounded.PlayCircle, contentDescription = null, modifier = Modifier.size(20.dp))
+                Spacer(Modifier.width(8.dp))
+                Text("Watch how on YouTube")
             }
 
             Heading("How to do it")
@@ -173,7 +184,7 @@ fun ExercisePickRow(exercise: Exercise, onClick: () -> Unit, badge: String? = nu
         subtitle = listOfNotNull(badge, exercise.focus.joinToString { it.label }, Format.measure(exercise.defaultMeasure, exercise.perSide)).joinToString(" · "),
         onClick = onClick,
         trailing = trailing ?: {
-            ExerciseImage(exercise, Modifier.size(52.dp), animate = false, corner = 10.dp)
+            ExerciseImage(exercise, Modifier.size(52.dp), animate = false, corner = 10.dp, fit = false)
         },
     )
 }

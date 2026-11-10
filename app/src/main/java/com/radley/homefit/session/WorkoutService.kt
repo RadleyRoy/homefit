@@ -121,7 +121,10 @@ class WorkoutService : LifecycleService() {
     private fun notify(notification: Notification) {
         // Without POST_NOTIFICATIONS the foreground service still runs; the notification just
         // isn't shown, which is the user's call.
-        runCatching { NotificationManagerCompat.from(this).notify(Notifications.WORKOUT_NOTIFICATION_ID, notification) }
+        try {
+            NotificationManagerCompat.from(this).notify(Notifications.WORKOUT_NOTIFICATION_ID, notification)
+        } catch (_: SecurityException) {
+        }
     }
 
     companion object {

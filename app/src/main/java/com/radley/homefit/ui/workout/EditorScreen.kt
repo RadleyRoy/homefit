@@ -208,7 +208,7 @@ fun EditorScreen(
             itemsIndexed(state.items) { index, item ->
                 val exercise = state.content?.exercises?.get(item.exerciseId) ?: return@itemsIndexed
                 Row(Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 6.dp, bottom = 6.dp), verticalAlignment = Alignment.CenterVertically) {
-                    ExerciseImage(exercise, Modifier.size(52.dp), animate = false, corner = 10.dp)
+                    ExerciseImage(exercise, Modifier.size(52.dp), animate = false, corner = 10.dp, fit = false)
                     Spacer(Modifier.width(12.dp))
                     Column(Modifier.weight(1f)) {
                         Text(exercise.name, style = MaterialTheme.typography.titleSmall)

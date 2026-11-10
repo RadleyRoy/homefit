@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Only the optional AI coach goes online; everything else works offline. -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- No INTERNET permission: everything is bundled, and the AI coach runs in the Claude app. -->
 
     <!-- The active-workout notification and reminders. -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
@@ -23,6 +22,8 @@
 
     <queries>
         <package android:name="com.google.android.apps.healthdata" />
+        <!-- The coach hands prompts to the Claude app and needs to know whether it's installed. -->
+        <package android:name="com.anthropic.claude" />
     </queries>
 
     <application
@@ -44,6 +45,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Share a Claude reply to HomeFit to import the workouts in it. -->
+            <intent-filter android:label="@string/share_target">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
             </intent-filter>
             <!-- Health Connect (Android 13 and below) shows our privacy rationale through this. -->
             <intent-filter>

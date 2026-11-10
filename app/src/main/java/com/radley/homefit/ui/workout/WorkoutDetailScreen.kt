@@ -57,7 +57,7 @@ import com.radley.homefit.ui.components.BackTopBar
 import com.radley.homefit.ui.components.ExerciseImage
 import com.radley.homefit.ui.components.Format
 import com.radley.homefit.ui.components.LevelBolts
-import com.radley.homefit.ui.components.color
+import com.radley.homefit.ui.components.CoverWithScrim
 import com.radley.homefit.ui.components.icon
 
 @Composable
@@ -169,23 +169,19 @@ fun WorkoutDetailScreen(
 
 @Composable
 private fun Header(workout: ResolvedWorkout, weightKg: Double, onReset: () -> Unit) {
-    val color = workout.focus?.color ?: workout.category.color
     Column {
-        Box(
+        CoverWithScrim(
+            workout.cover,
+            workout.focus?.icon ?: workout.category.icon,
             Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
-                .clip(RoundedCornerShape(24.dp))
-                .background(MaterialTheme.colorScheme.surfaceContainer)
-                .padding(20.dp),
+                .height(200.dp)
+                .clip(RoundedCornerShape(24.dp)),
         ) {
-            Column {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(workout.focus?.icon ?: workout.category.icon, contentDescription = null, tint = color)
-                    Spacer(Modifier.width(8.dp))
-                    Text(workout.subtitle ?: workout.category.label, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                }
-                Spacer(Modifier.height(10.dp))
+            Column(Modifier.align(Alignment.BottomStart).padding(20.dp)) {
+                Text(workout.subtitle ?: workout.category.label, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Spacer(Modifier.height(8.dp))
                 Row(horizontalArrangement = Arrangement.spacedBy(24.dp)) {
                     HeaderStat(Format.minutes(workout.estimatedSeconds), "Duration")
                     HeaderStat("${workout.steps.size}", "Exercises")
@@ -244,7 +240,7 @@ private fun StepRow(step: ResolvedStep, onInfo: () -> Unit, onReplace: (() -> Un
         Modifier.fillMaxWidth().clickable(onClick = onInfo).padding(horizontal = 16.dp, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        ExerciseImage(step.exercise, Modifier.size(64.dp), animate = false, corner = 12.dp)
+        ExerciseImage(step.exercise, Modifier.size(64.dp), animate = false, corner = 12.dp, fit = false)
         Spacer(Modifier.width(14.dp))
         Column(Modifier.weight(1f)) {
             Text(step.exercise.name, style = MaterialTheme.typography.titleSmall)

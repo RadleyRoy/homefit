@@ -1,0 +1,115 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to release (e.g. v1.2.0); created from the chosen branch if it does not exist'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # The tag is the version: build.gradle.kts reads HOMEFIT_VERSION_NAME and derives the
+      # version code from it (1.2.3 -> 10203), so a later tag always installs over an earlier one.
+      - name: Resolve version
+        id: version
+        env:
+          TAG: ${{ github.event.inputs.tag || github.ref_name }}
+        run: |
+          if ! [[ "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Tag '$TAG' is not of the form v1.2.3"
+            exit 1
+          fi
+          echo "tag=$TAG"          >> "$GITHUB_OUTPUT"
+          echo "version=${TAG#v}"  >> "$GITHUB_OUTPUT"
+
+      # A failing test must block a release, so this runs before anything is built.
+      - name: Unit tests
+        run: ./gradlew testDebugUnitTest --stacktrace
+
+      - name: Lint
+        run: ./gradlew lintRelease --stacktrace
+
+      # No fallback to the debug key here: a debug-signed release can't upgrade over a
+      # properly signed install, which would force an uninstall and lose the workout history.
+      - name: Decode signing keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.HOMEFIT_KEYSTORE_B64 }}
+        run: |
+          if [ -z "$KEYSTORE_BASE64" ]; then
+            echo "::error::The HOMEFIT_KEYSTORE_B64 secret is not set; refusing to publish a debug-signed release."
+            exit 1
+          fi
+          echo "$KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/homefit-release.jks"
+
+      - name: Assemble release APK
+        env:
+          HOMEFIT_VERSION_NAME: ${{ steps.version.outputs.version }}
+          HOMEFIT_KEYSTORE_PATH: ${{ runner.temp }}/homefit-release.jks
+          HOMEFIT_KEYSTORE_PASSWORD: ${{ secrets.HOMEFIT_KEYSTORE_PASSWORD }}
+          HOMEFIT_KEY_ALIAS: ${{ secrets.HOMEFIT_KEY_ALIAS }}
+          HOMEFIT_KEY_PASSWORD: ${{ secrets.HOMEFIT_KEY_PASSWORD }}
+        run: ./gradlew assembleRelease --stacktrace
+
+      - name: Name the artifact
+        id: artifact
+        run: |
+          SRC=$(find app/build/outputs/apk/release -name '*.apk' | head -1)
+          DEST="HomeFit-${{ steps.version.outputs.version }}.apk"
+          cp "$SRC" "$DEST"
+          sha256sum "$DEST" > "$DEST.sha256"
+          echo "path=$DEST" >> "$GITHUB_OUTPUT"
+
+      - name: Verify the APK is release-signed
+        run: |
+          APKSIGNER=$(find "$ANDROID_HOME/build-tools" -name apksigner | sort -r | head -1)
+          CERTS=$("$APKSIGNER" verify --print-certs "${{ steps.artifact.outputs.path }}")
+          echo "$CERTS"
+          if grep -q "CN=Android Debug" <<< "$CERTS"; then
+            echo "::error::The APK is signed with a debug key"
+            exit 1
+          fi
+
+      - name: Remove the keystore
+        if: always()
+        run: rm -f "$RUNNER_TEMP/homefit-release.jks"
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          name: HomeFit ${{ steps.version.outputs.version }}
+          generate_release_notes: true
+          files: |
+            ${{ steps.artifact.outputs.path }}
+            ${{ steps.artifact.outputs.path }}.sha256
+          body: |
+            Install by opening this page on your phone, downloading the APK below and tapping it.
+            Android will ask once to allow installs from your browser or file manager.
+
+            Each release installs over the previous one and keeps your workouts. If Android says
+            the app "conflicts with an existing package", the installed copy was signed with a
+            different key (for example a build made on the PC): export a backup from
+            Me → Health & data → Export backup, uninstall, install this APK and restore the backup.

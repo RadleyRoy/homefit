@@ -44,6 +44,8 @@ data class ResolvedWorkout(
     val difficultyMultiplier: Double,
     /** False for coach proposals, which are edited by saving them as a custom workout first. */
     val canEdit: Boolean,
+    /** Header photo as an asset URI, or null when there's nothing to show. */
+    val cover: String? = null,
 ) {
     val estimatedSeconds: Int
         get() = steps.sumOf { it.estimatedSeconds } + restSeconds * (steps.size - 1).coerceAtLeast(0)

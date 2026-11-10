@@ -8,6 +8,8 @@ class Content(
     val exercises: Map<String, Exercise>,
     val workouts: Map<String, WorkoutTemplate>,
     val programs: Map<String, Program>,
+    /** Names of the photos in `content/covers`, without the extension. */
+    val covers: Set<String> = emptySet(),
 ) {
     fun exercise(id: String): Exercise = exercises[id] ?: error("Unknown exercise $id")
 
@@ -19,6 +21,14 @@ class Content(
         workouts.values.firstOrNull {
             it.category == WorkoutCategory.FOCUS && it.focus == focus && it.level == level
         }
+
+    /**
+     * The cover photo for a workout or program: one made for it, else its body area's, else its
+     * category's. Null when none of those exist (custom workouts, for example).
+     */
+    fun cover(id: String?, focus: FocusArea? = null, category: WorkoutCategory? = null): String? =
+        listOfNotNull(id, focus?.let { "focus_${it.name}" }, category?.let { "category_${it.name}" })
+            .firstOrNull { it in covers }
 }
 
 /**
@@ -29,7 +39,7 @@ object ContentParser {
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    fun parse(exercisesJson: String, workoutsJson: String, programsJson: String): Content {
+    fun parse(exercisesJson: String, workoutsJson: String, programsJson: String, covers: Set<String> = emptySet()): Content {
         val exercises = json.decodeFromString<List<ExerciseDto>>(exercisesJson)
             .map { it.toModel() }
             .associateBy { it.id }
@@ -39,7 +49,7 @@ object ContentParser {
         val programs = json.decodeFromString<ProgramsFile>(programsJson).programs
             .map { it.toModel() }
             .associateBy { it.id }
-        return Content(exercises, workouts, programs)
+        return Content(exercises, workouts, programs, covers)
     }
 
     /** `"squats x15"` → item. Also the storage format for edited and custom workouts. */

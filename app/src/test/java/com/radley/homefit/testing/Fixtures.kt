@@ -13,7 +13,8 @@ import java.io.File
 /** The real bundled content. Unit tests run with the module directory as the working dir. */
 val bundledContent: Content by lazy {
     fun read(name: String) = File("src/main/assets/content/$name").readText()
-    ContentParser.parse(read("exercises.json"), read("workouts.json"), read("programs.json"))
+    val covers = File("src/main/assets/content/covers").listFiles().orEmpty().map { it.nameWithoutExtension }.toSet()
+    ContentParser.parse(read("exercises.json"), read("workouts.json"), read("programs.json"), covers)
 }
 
 fun exercise(

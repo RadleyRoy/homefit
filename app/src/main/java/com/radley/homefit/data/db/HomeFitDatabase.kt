@@ -1,9 +1,12 @@
 package com.radley.homefit.data.db
 
 import android.content.Context
+import androidx.room.AutoMigration
 import androidx.room.Database
+import androidx.room.DeleteTable
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.migration.AutoMigrationSpec
 
 @Database(
     entities = [
@@ -16,10 +19,10 @@ import androidx.room.RoomDatabase
         FavoriteEntity::class,
         ReminderEntity::class,
         AchievementEntity::class,
-        CoachMessageEntity::class,
     ],
-    version = 1,
+    version = 2,
     exportSchema = true,
+    autoMigrations = [AutoMigration(from = 1, to = 2, spec = HomeFitDatabase.DropCoachChat::class)],
 )
 abstract class HomeFitDatabase : RoomDatabase() {
     abstract fun sessions(): SessionDao
@@ -31,7 +34,10 @@ abstract class HomeFitDatabase : RoomDatabase() {
     abstract fun favorites(): FavoriteDao
     abstract fun reminders(): ReminderDao
     abstract fun achievements(): AchievementDao
-    abstract fun coachMessages(): CoachMessageDao
+
+    /** Version 2: the coach moved to the Claude app, so its in-app chat history went with it. */
+    @DeleteTable(tableName = "coach_messages")
+    class DropCoachChat : AutoMigrationSpec
 
     companion object {
         const val NAME = "homefit.db"

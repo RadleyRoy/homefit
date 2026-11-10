@@ -60,6 +60,7 @@ class WorkoutRepository(
             focus: com.radley.homefit.data.content.FocusArea?,
             progression: Double = 1.0,
             canEdit: Boolean = true,
+            coverKey: String? = null,
         ): ResolvedWorkout {
             val items = override?.let { ContentParser.decodeItems(it.items) } ?: base
             val played = DifficultyAdapter.substitute(items, swaps, content)
@@ -81,12 +82,14 @@ class WorkoutRepository(
                 isEdited = override != null || swaps.isNotEmpty(),
                 difficultyMultiplier = multiplier,
                 canEdit = canEdit,
+                cover = content.cover(coverKey, focus, category)?.let(ContentRepository::coverUri)
+                    ?: steps.firstNotNullOfOrNull { it.exercise.images.firstOrNull() }?.let(ContentRepository::imageUri),
             )
         }
 
         return when (ref) {
             is WorkoutRef.Builtin -> content.workouts[ref.id]?.let { t ->
-                build(t.name, t.level.label, t.description, t.category, t.items, t.restSeconds, t.level, t.focus)
+                build(t.name, t.level.label, t.description, t.category, t.items, t.restSeconds, t.level, t.focus, coverKey = t.id)
             }
             is WorkoutRef.ProgramDay -> {
                 val program = content.programs[ref.programId] ?: return null
@@ -107,6 +110,7 @@ class WorkoutRepository(
                             level = level,
                             focus = program.focus,
                             progression = plan.factor,
+                            coverKey = program.id,
                         )
                     }
                 }
@@ -132,27 +136,13 @@ class WorkoutRepository(
             is WorkoutRef.Custom -> db.customWorkouts().byId(ref.id)?.let { c ->
                 build(
                     title = c.name,
-                    subtitle = if (c.origin == ORIGIN_COACH) "From your coach" else "My workout",
+                    subtitle = if (c.origin == ORIGIN_COACH) "Designed by Claude" else "My workout",
                     description = "",
                     category = WorkoutCategory.CUSTOM,
                     base = ContentParser.decodeItems(c.items),
                     rest = c.restSeconds,
                     level = null,
                     focus = null,
-                )
-            }
-            is WorkoutRef.CoachProposal -> db.coachMessages().all().firstOrNull { it.id == ref.messageId }?.let { m ->
-                val items = m.workoutItems ?: return null
-                build(
-                    title = m.workoutName ?: "Coach workout",
-                    subtitle = "Suggested by your coach",
-                    description = "",
-                    category = WorkoutCategory.GENERATED,
-                    base = ContentParser.decodeItems(items),
-                    rest = null,
-                    level = null,
-                    focus = null,
-                    canEdit = false,
                 )
             }
         }

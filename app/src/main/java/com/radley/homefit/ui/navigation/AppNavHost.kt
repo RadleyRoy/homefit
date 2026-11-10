@@ -1,5 +1,9 @@
 package com.radley.homefit.ui.navigation
 
+import android.app.Activity
+import android.content.Context
+import android.content.ContextWrapper
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -7,18 +11,22 @@ import androidx.compose.material.icons.rounded.BarChart
 import androidx.compose.material.icons.rounded.Explore
 import androidx.compose.material.icons.rounded.FitnessCenter
 import androidx.compose.material.icons.rounded.Person
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -26,7 +34,6 @@ import androidx.navigation.toRoute
 import com.radley.homefit.data.content.WorkoutCategory
 import com.radley.homefit.domain.WorkoutRef
 import com.radley.homefit.ui.coach.CoachScreen
-import com.radley.homefit.ui.coach.CoachSettingsScreen
 import com.radley.homefit.ui.complete.CompleteScreen
 import com.radley.homefit.ui.discover.DiscoverScreen
 import com.radley.homefit.ui.discover.LibraryScreen
@@ -45,6 +52,12 @@ import com.radley.homefit.ui.report.HistoryScreen
 import com.radley.homefit.ui.report.ReportScreen
 import com.radley.homefit.ui.workout.EditorScreen
 import com.radley.homefit.ui.workout.WorkoutDetailScreen
+
+private tailrec fun Context.findActivity(): Activity? = when (this) {
+    is Activity -> this
+    is ContextWrapper -> baseContext.findActivity()
+    else -> null
+}
 
 private enum class Tab(val label: String, val icon: ImageVector) {
     TRAINING("Training", Icons.Rounded.FitnessCenter),
@@ -130,19 +143,29 @@ fun AppNavHost(nav: NavHostController, startOnboarding: Boolean) {
         }
         composable<AboutRoute> { AboutScreen(onBack = { nav.popBackStack() }) }
         composable<CoachRoute> {
-            CoachScreen(
-                onBack = { nav.popBackStack() },
-                onSettings = { nav.navigate(CoachSettingsRoute) },
-                onOpenWorkout = ::openWorkout,
-            )
+            CoachScreen(onBack = { nav.popBackStack() }, onOpenWorkout = ::openWorkout)
         }
-        composable<CoachSettingsRoute> { CoachSettingsScreen(onBack = { nav.popBackStack() }) }
     }
 }
 
 @Composable
 private fun Tabs(nav: NavHostController, openWorkout: (WorkoutRef) -> Unit) {
     var tab by rememberSaveable { mutableIntStateOf(0) }
+    var confirmExit by rememberSaveable { mutableStateOf(false) }
+    val activity = LocalContext.current.findActivity()
+
+    // The tabs are the root of the app, so Back here would close it outright; ask first.
+    BackHandler { confirmExit = true }
+    if (confirmExit) {
+        AlertDialog(
+            onDismissRequest = { confirmExit = false },
+            title = { Text("Exit HomeFit?") },
+            text = { Text("Your progress is saved. A workout in progress keeps running in the notification.") },
+            confirmButton = { TextButton(onClick = { activity?.finish() }) { Text("Exit") } },
+            dismissButton = { TextButton(onClick = { confirmExit = false }) { Text("Stay") } },
+        )
+    }
+
     Scaffold(
         bottomBar = {
             NavigationBar {

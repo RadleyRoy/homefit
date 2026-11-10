@@ -6,7 +6,6 @@ import androidx.room.withTransaction
 import com.radley.homefit.data.content.FocusArea
 import com.radley.homefit.data.content.Level
 import com.radley.homefit.data.db.AchievementEntity
-import com.radley.homefit.data.db.CoachMessageEntity
 import com.radley.homefit.data.db.CustomWorkoutEntity
 import com.radley.homefit.data.db.DifficultyEntity
 import com.radley.homefit.data.db.FavoriteEntity
@@ -26,9 +25,6 @@ import kotlinx.serialization.json.Json
  * A single JSON file holding every table and setting, written to wherever the user picks in the
  * system file picker (Google Drive included). That replaces the original app's sign-in-to-sync:
  * no account, and the user can see exactly what's in it.
- *
- * The coach API key is deliberately not included; it's encrypted with a key that can't leave
- * this device, and a backup file is the last place it should end up in plain text.
  */
 class BackupManager(
     private val context: Context,
@@ -47,7 +43,7 @@ class BackupManager(
             exportedAt = System.currentTimeMillis(),
             profile = ProfileDto.from(settings.currentProfile()),
             workoutPrefs = settings.currentWorkoutPrefs().let { WorkoutPrefsDto(it.restSeconds, it.countdownSeconds, it.voiceEnabled, it.coachTips, it.soundEffects, it.keepScreenOn) },
-            appPrefs = settings.currentAppPrefs().let { AppPrefsDto(it.units.name, it.weekStart.name, it.planStartEpochDay, it.planSeed, it.coachModel) },
+            appPrefs = settings.currentAppPrefs().let { AppPrefsDto(it.units.name, it.weekStart.name, it.planStartEpochDay, it.planSeed) },
             sessions = db.sessions().all(),
             weights = db.weights().all(),
             programProgress = db.programProgress().all(),
@@ -57,7 +53,6 @@ class BackupManager(
             favorites = db.favorites().all(),
             reminders = db.reminders().all(),
             achievements = db.achievements().all(),
-            coachMessages = db.coachMessages().all(),
         )
         context.contentResolver.openOutputStream(uri, "wt")?.bufferedWriter()?.use {
             it.write(json.encodeToString(BackupFile.serializer(), file))
@@ -82,7 +77,6 @@ class BackupManager(
             db.favorites().insertAll(file.favorites)
             db.reminders().insertAll(file.reminders)
             db.achievements().insertAll(file.achievements)
-            file.coachMessages.forEach { db.coachMessages().insert(it) }
         }
         settings.setProfile(file.profile.toModel())
         settings.updateWorkoutPrefs {
@@ -95,7 +89,6 @@ class BackupManager(
                 onboardingComplete = true,
                 planStartEpochDay = file.appPrefs.planStartEpochDay,
                 planSeed = file.appPrefs.planSeed,
-                coachModel = file.appPrefs.coachModel,
             )
         }
         file.sessions.size
@@ -124,7 +117,6 @@ class BackupManager(
         db.favorites().clear()
         db.reminders().clear()
         db.achievements().clear()
-        db.coachMessages().clear()
     }
 
     private inline fun <reified E : Enum<E>> enumOr(name: String, fallback: E): E =
@@ -154,7 +146,6 @@ private data class BackupFile(
     val favorites: List<FavoriteEntity>,
     val reminders: List<ReminderEntity>,
     val achievements: List<AchievementEntity>,
-    val coachMessages: List<CoachMessageEntity> = emptyList(),
 )
 
 @Serializable
@@ -212,5 +203,4 @@ private data class AppPrefsDto(
     val weekStart: String,
     val planStartEpochDay: Long?,
     val planSeed: Long,
-    val coachModel: String,
 )

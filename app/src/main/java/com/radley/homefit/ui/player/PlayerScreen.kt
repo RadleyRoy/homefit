@@ -293,7 +293,7 @@ private fun RestPane(active: ActiveWorkout, phase: Phase.Rest, vm: PlayerViewMod
             Modifier.fillMaxWidth().clip(RoundedCornerShape(20.dp)).background(MaterialTheme.colorScheme.surfaceContainer).padding(12.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            ExerciseImage(next.exercise, Modifier.size(96.dp), corner = 14.dp)
+            ExerciseImage(next.exercise, Modifier.size(96.dp), corner = 14.dp, fit = false)
             Spacer(Modifier.width(14.dp))
             Column {
                 Text(next.exercise.name, style = MaterialTheme.typography.titleMedium)

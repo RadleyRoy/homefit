@@ -134,7 +134,11 @@ class ReminderReceiver : BroadcastReceiver() {
                     .setAutoCancel(true)
                     .setCategory(NotificationCompat.CATEGORY_REMINDER)
                     .build()
-                NotificationManagerCompat.from(context).notify(Notifications.REMINDER_NOTIFICATION_ID, notification)
+                try {
+                    NotificationManagerCompat.from(context).notify(Notifications.REMINDER_NOTIFICATION_ID, notification)
+                } catch (_: SecurityException) {
+                    // Notifications were turned off after the reminder was set.
+                }
             } finally {
                 pending.finish()
             }
@@ -153,6 +157,7 @@ class ReminderReceiver : BroadcastReceiver() {
 /** Alarms don't survive a reboot, a clock change or an app update; this books them again. */
 class RescheduleReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
+        if (intent.action !in RESCHEDULE_ACTIONS) return
         val pending = goAsync()
         CoroutineScope(SupervisorJob() + Dispatchers.Default).launch {
             try {
@@ -161,5 +166,14 @@ class RescheduleReceiver : BroadcastReceiver() {
                 pending.finish()
             }
         }
+    }
+
+    private companion object {
+        val RESCHEDULE_ACTIONS = setOf(
+            Intent.ACTION_BOOT_COMPLETED,
+            Intent.ACTION_MY_PACKAGE_REPLACED,
+            Intent.ACTION_TIME_CHANGED,
+            Intent.ACTION_TIMEZONE_CHANGED,
+        )
     }
 }

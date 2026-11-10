@@ -29,7 +29,9 @@
    "Land softly with your knees slightly bent.",
    "Breathe in rhythm with the jumps."
   ],
-  "images": [],
+  "images": [
+   "jumping_jacks/0.jpg"
+  ],
   "easier": "march_in_place",
   "harder": "star_jumps"
  },
@@ -63,7 +65,9 @@
   "tips": [
    "Lean back slightly rather than hunching forward."
   ],
-  "images": [],
+  "images": [
+   "high_knees/0.jpg"
+  ],
   "easier": "march_in_place",
   "harder": null
  },
@@ -132,7 +136,12 @@
   "tips": [
    "Keep your core tight in the plank so your hips do not sag."
   ],
-  "images": [],
+  "images": [
+   "burpees/0.jpg",
+   "burpees/1.jpg",
+   "burpees/2.jpg",
+   "burpees/3.jpg"
+  ],
   "easier": "squat_thrusts",
   "harder": null
  },
@@ -163,7 +172,10 @@
    "Step them back in and stand up."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "squat_thrusts/0.jpg",
+   "squat_thrusts/1.jpg"
+  ],
   "easier": null,
   "harder": "burpees"
  },
@@ -416,7 +428,9 @@
   "tips": [
    "Do not lock your elbows at full extension."
   ],
-  "images": [],
+  "images": [
+   "shadow_boxing/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -445,7 +459,9 @@
    "Swing your arms naturally in time with your steps."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "march_in_place/0.jpg"
+  ],
   "easier": null,
   "harder": "high_knees"
  },
@@ -543,7 +559,9 @@
    "Keep your hips level and your shoulders over your wrists."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "plank_jacks/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -609,7 +627,9 @@
    "Use it to recover between running intervals."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "brisk_walk/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -643,7 +663,9 @@
   "tips": [
    "If you can't speak in full sentences, slow down."
   ],
-  "images": [],
+  "images": [
+   "easy_run/0.jpg"
+  ],
   "easier": "brisk_walk",
   "harder": "fast_run"
  },
@@ -675,7 +697,9 @@
    "Hold good form; ease off if it starts to fall apart."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "fast_run/0.jpg"
+  ],
   "easier": "easy_run",
   "harder": null
  },
@@ -996,7 +1020,10 @@
   "tips": [
    "Press your lower back into the floor the whole time."
   ],
-  "images": [],
+  "images": [
+   "leg_raises/0.jpg",
+   "leg_raises/1.jpg"
+  ],
   "easier": "reverse_crunches",
   "harder": null
  },
@@ -1027,7 +1054,10 @@
   "tips": [
    "Press your lower back into the floor; raise your legs higher if it arches."
   ],
-  "images": [],
+  "images": [
+   "scissor_kicks/0.jpg",
+   "scissor_kicks/1.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -1446,7 +1476,10 @@
   "tips": [
    "Move slowly; your hips should not rock side to side."
   ],
-  "images": [],
+  "images": [
+   "bird_dog/0.jpg",
+   "bird_dog/1.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -1545,7 +1578,9 @@
    "Push back to the start, keeping your body straight."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "wall_push_ups/0.jpg"
+  ],
   "easier": null,
   "harder": "incline_push_ups"
  },
@@ -1614,8 +1649,7 @@
   ],
   "tips": [],
   "images": [
-   "wide_push_ups/0.jpg",
-   "wide_push_ups/1.jpg"
+   "wide_push_ups/0.jpg"
   ],
   "easier": "knee_push_ups",
   "harder": null
@@ -1887,7 +1921,9 @@
    "Bend your elbows to lower your body, then straighten them to push back up."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "floor_triceps_dips/0.jpg"
+  ],
   "easier": null,
   "harder": "triceps_dips"
  },
@@ -1937,22 +1973,22 @@
    "triceps"
   ],
   "secondaryMuscles": [],
-  "measure": "x12",
-  "perSide": false,
+  "measure": "x10",
+  "perSide": true,
   "met": 5,
   "noJump": true,
   "instructions": [
-   "To begin, stand up with both arms fully extended above the head holding one end of a towel with both hands. Your elbows should be in and the arms perpendicular to the floor with the palms facing each other while your feet should be shoulder width apart from each other. This is the starting position.",
-   "Now communicate with your partner so that he/she can grip the other side of the towel to apply resistance. Keeping your upper arms close to your head (elbows in) and perpendicular to the floor, lower the resistance in a semicircular motion behind your head until your forearms touch your biceps. Tip: The upper arms should remain stationary and only the forearms should move. Breathe in as you perform this step.",
-   "Go back to the starting position by using the triceps to raise the towel. Breathe out as you perform this step.",
-   "Repeat for the recommended amount of repetitions."
+   "Stand tall holding one end of a towel in one hand, elbow bent and pointing up, so the towel hangs down your back.",
+   "Reach behind your lower back with the other hand and grab the bottom of the towel.",
+   "Keeping your upper arm beside your head, straighten the top arm while the lower hand pulls down against it.",
+   "Lower slowly. Finish the reps, then switch arms."
   ],
   "tips": [
-   "Pull the towel with your lower hand to set the resistance."
+   "Pull harder with the lower hand to make it tougher.",
+   "Keep your elbow still; only the forearm moves."
   ],
   "images": [
-   "towel_triceps_extension/0.jpg",
-   "towel_triceps_extension/1.jpg"
+   "towel_triceps_extension/0.jpg"
   ],
   "easier": null,
   "harder": null
@@ -1981,7 +2017,9 @@
    "Lower them slowly and repeat at a steady pace."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "arm_raises/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2043,7 +2081,9 @@
   "tips": [
    "Widen your feet to stop your hips swaying."
   ],
-  "images": [],
+  "images": [
+   "plank_up_downs/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2074,7 +2114,10 @@
    "Gently lift your arms until you feel a stretch in your biceps and chest. Hold."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "biceps_stretch/0.jpg",
+   "biceps_stretch/1.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2102,7 +2145,9 @@
    "Lower slowly with control and repeat."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "side_arm_raises/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2170,7 +2215,9 @@
    "Slowly lower yourself back down until you lightly touch the seat."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "chair_squats/0.png"
+  ],
   "easier": null,
   "harder": "squats"
  },
@@ -2239,7 +2286,9 @@
   "tips": [
    "Keep your front knee over your ankle."
   ],
-  "images": [],
+  "images": [
+   "reverse_lunges/0.jpg"
+  ],
   "easier": null,
   "harder": "split_jumps"
  },
@@ -2270,7 +2319,9 @@
    "Push off to return to the start."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "side_lunges/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2301,7 +2352,10 @@
    "Return to standing and repeat on the other side."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "curtsy_lunges/0.jpg",
+   "curtsy_lunges/1.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2332,7 +2386,9 @@
    "Squeeze your glutes to stand back up."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "sumo_squats/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2362,7 +2418,10 @@
    "Keep your weight in your heels and chest up."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "squats/0.jpg",
+   "squats/1.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2392,7 +2451,9 @@
    "Hold the position, keeping your back flat against the wall."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "wall_sit/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2549,7 +2610,9 @@
    "Lower slowly. Finish the set, then switch sides."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "side_leg_lifts/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2576,7 +2639,9 @@
    "Lower your heels slowly back to the floor."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "calf_raises/0.png"
+  ],
   "easier": null,
   "harder": null
  },
@@ -2607,7 +2672,10 @@
    "Push through your front foot to rise. Finish the set, then switch legs."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "split_squats/0.jpg",
+   "split_squats/1.jpg"
+  ],
   "easier": null,
   "harder": "split_jumps"
  },
@@ -2637,7 +2705,9 @@
    "Press back up until your arms are straight."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "pike_push_ups/0.jpg"
+  ],
   "easier": null,
   "harder": "handstand_push_ups"
  },
@@ -2853,7 +2923,9 @@
    "Place it back down and alternate, keeping your hips still."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "shoulder_taps/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -3497,7 +3569,9 @@
    "Relax your shoulders down and hold, breathing slowly."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "cobra_stretch/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -3519,9 +3593,9 @@
   "met": 2.3,
   "noJump": true,
   "instructions": [
-   "Lie on your back with one leg extended above you, with the hip at ninety degrees. Keep the other leg flat on the floor.",
-   "Loop a belt, band, or rope over the ball of your foot. This will be your starting position.",
-   "Pull on the belt to create tension in the calves and hamstrings. Hold this stretch for 10-30 seconds, and repeat with the other leg."
+   "Lie flat on your back, bend one knee, and put that foot flat on the floor to stabilize your spine.",
+   "Extend the other leg in the air. If you're tight, you wont be able to straighten it. That's okay. Extend the knee so that the sole of the lifted foot faces the ceiling (or as close as you can get it).",
+   "Slowly straighten the legs as much as possible and then pull the leg toward your nose. Switch sides."
   ],
   "tips": [],
   "images": [
@@ -3647,7 +3721,10 @@
    "Hold, letting your knees relax towards the floor."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "butterfly_stretch/0.jpg",
+   "butterfly_stretch/1.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -3709,7 +3786,10 @@
    "Hold, then switch sides."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "glute_stretch/0.jpg",
+   "glute_stretch/1.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -4332,8 +4412,7 @@
   ],
   "tips": [],
   "images": [
-   "seated_glute_stretch/0.jpg",
-   "seated_glute_stretch/1.jpg"
+   "seated_glute_stretch/0.png"
   ],
   "easier": null,
   "harder": null
@@ -4580,7 +4659,9 @@
   "tips": [
    "Move within a pain-free range; this is about mobility, not effort."
   ],
-  "images": [],
+  "images": [
+   "heel_slides/0.png"
+  ],
   "easier": null,
   "harder": null
  },
@@ -4609,7 +4690,9 @@
    "Lower slowly. Finish the set, then switch legs."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "straight_leg_raise/0.png"
+  ],
   "easier": null,
   "harder": null
  },
@@ -4636,7 +4719,9 @@
    "Hold for a second, then lower slowly. Finish the set, then switch legs."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "seated_knee_extension/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },
@@ -4695,7 +4780,9 @@
    "Return to the centre and rotate to the other side."
   ],
   "tips": [],
-  "images": [],
+  "images": [
+   "seated_torso_twist/0.jpg"
+  ],
   "easier": null,
   "harder": null
  },

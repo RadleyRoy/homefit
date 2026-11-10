@@ -56,12 +56,13 @@ import com.radley.homefit.data.content.Level
 import com.radley.homefit.domain.WorkoutRef
 import com.radley.homefit.ui.components.AppCard
 import com.radley.homefit.ui.components.Format
-import com.radley.homefit.ui.components.IconBadge
+import com.radley.homefit.ui.components.CoverImage
 import com.radley.homefit.ui.components.LevelBolts
 import com.radley.homefit.ui.components.SectionHeader
 import com.radley.homefit.ui.components.TabTopBar
 import com.radley.homefit.ui.components.WorkoutRow
 import com.radley.homefit.ui.components.color
+import com.radley.homefit.ui.components.coverUri
 import com.radley.homefit.ui.components.icon
 
 @Composable
@@ -242,9 +243,8 @@ private fun DaySquare(day: DayCell) {
 private fun ChallengeCard(status: ProgramStatus, onClick: () -> Unit) {
     val color = status.program.focus.color
     AppCard(Modifier.width(220.dp), onClick = onClick) {
+        CoverImage(status.program.coverUri, status.program.focus.icon, Modifier.fillMaxWidth().height(112.dp))
         Column(Modifier.padding(14.dp)) {
-            IconBadge(status.program.focus.icon, color)
-            Spacer(Modifier.height(10.dp))
             Text(status.program.name, style = MaterialTheme.typography.titleSmall, maxLines = 2, minLines = 2)
             Spacer(Modifier.height(6.dp))
             Row(verticalAlignment = Alignment.CenterVertically) {

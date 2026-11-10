@@ -27,6 +27,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.produceState
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -43,6 +44,7 @@ import com.radley.homefit.data.Profile
 import com.radley.homefit.data.Sex
 import com.radley.homefit.data.UnitSystem
 import com.radley.homefit.data.WorkoutPrefs
+import com.radley.homefit.data.content.PhotoCredit
 import com.radley.homefit.di.ServiceLocator
 import com.radley.homefit.domain.BodyMetrics
 import com.radley.homefit.ui.components.AppCard
@@ -206,13 +208,14 @@ fun ProfileScreen(onBack: () -> Unit, viewModel: SettingsViewModel = viewModel()
 @Composable
 fun AboutScreen(onBack: () -> Unit) {
     val context = LocalContext.current
+    val credits by produceState(emptyList<PhotoCredit>()) { value = ServiceLocator.content.credits() }
     Scaffold(topBar = { BackTopBar("About", onBack) }) { padding ->
         Column(Modifier.padding(padding).verticalScroll(rememberScrollState()).padding(16.dp)) {
             AppCard(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(16.dp)) {
                     Text("HomeFit ${BuildConfig.VERSION_NAME}", style = MaterialTheme.typography.titleLarge)
                     Text(
-                        "A personal home-workout app. No accounts, no ads, no tracking: everything stays on this phone unless you export it or turn on Health Connect.",
+                        "A personal home-workout app. No accounts, no ads, no tracking, and no internet access at all: everything stays on this phone unless you export it, turn on Health Connect or send a prompt to Claude yourself.",
                         style = MaterialTheme.typography.bodyMedium,
                         modifier = Modifier.padding(top = 8.dp),
                     )
@@ -229,6 +232,26 @@ fun AboutScreen(onBack: () -> Unit) {
                         TextButton(onClick = {
                             context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/yuhonas/free-exercise-db")))
                         }) { Text("github.com/yuhonas/free-exercise-db") }
+                    }
+                }
+            }
+            if (credits.isNotEmpty()) {
+                SectionHeader("Photo credits")
+                AppCard(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(vertical = 8.dp)) {
+                        Text(
+                            "Other photos are used under the licence shown; tap one to see the original.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                        )
+                        credits.forEach { c ->
+                            ListRow(
+                                title = c.file.substringAfter('/').substringBeforeLast('.').replace('_', ' ').replace("/", " · "),
+                                subtitle = "${c.author} · ${c.license}",
+                                onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(c.page))) },
+                            )
+                        }
                     }
                 }
             }

@@ -217,18 +217,3 @@ interface AchievementDao {
     @Query("DELETE FROM achievements")
     suspend fun clear()
 }
-
-@Dao
-interface CoachMessageDao {
-    @Insert
-    suspend fun insert(message: CoachMessageEntity): Long
-
-    @Query("SELECT * FROM coach_messages ORDER BY createdAt ASC, id ASC")
-    fun observeAll(): Flow<List<CoachMessageEntity>>
-
-    @Query("SELECT * FROM coach_messages ORDER BY createdAt ASC, id ASC")
-    suspend fun all(): List<CoachMessageEntity>
-
-    @Query("DELETE FROM coach_messages")
-    suspend fun clear()
-}

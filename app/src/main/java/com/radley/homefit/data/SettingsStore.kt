@@ -52,7 +52,6 @@ class SettingsStore(private val context: Context) {
         val ONBOARDED = booleanPreferencesKey("onboarding_complete")
         val PLAN_START = longPreferencesKey("plan_start_epoch_day")
         val PLAN_SEED = longPreferencesKey("plan_seed")
-        val COACH_MODEL = stringPreferencesKey("coach_model")
         val HEALTH_SYNC = booleanPreferencesKey("health_connect_sync")
     }
 
@@ -92,7 +91,6 @@ class SettingsStore(private val context: Context) {
             prefs[Keys.ONBOARDED] = next.onboardingComplete
             next.planStartEpochDay?.let { prefs[Keys.PLAN_START] = it } ?: prefs.remove(Keys.PLAN_START)
             prefs[Keys.PLAN_SEED] = next.planSeed
-            prefs[Keys.COACH_MODEL] = next.coachModel
             prefs[Keys.HEALTH_SYNC] = next.healthConnectSync
         }
     }
@@ -160,7 +158,6 @@ class SettingsStore(private val context: Context) {
             onboardingComplete = this[Keys.ONBOARDED] ?: d.onboardingComplete,
             planStartEpochDay = this[Keys.PLAN_START],
             planSeed = this[Keys.PLAN_SEED] ?: d.planSeed,
-            coachModel = this[Keys.COACH_MODEL] ?: d.coachModel,
             healthConnectSync = this[Keys.HEALTH_SYNC] ?: d.healthConnectSync,
         )
     }

@@ -6,4 +6,5 @@
     <string name="workout_channel_name">Active workout</string>
     <string name="workout_channel_description">Keeps the timer and voice coach running while the screen is off.</string>
     <string name="widget_description">Weekly goal, streak and a shortcut to today\'s workout.</string>
+    <string name="share_target">Import to HomeFit</string>
 </resources>

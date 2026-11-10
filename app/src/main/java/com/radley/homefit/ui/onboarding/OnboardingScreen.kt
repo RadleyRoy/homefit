@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -56,9 +57,9 @@ import com.radley.homefit.data.UnitSystem
 import com.radley.homefit.data.content.FocusArea
 import com.radley.homefit.data.content.Level
 import com.radley.homefit.ui.components.Format
-import com.radley.homefit.ui.components.IconBadge
+import com.radley.homefit.ui.components.CoverImage
 import com.radley.homefit.ui.components.LevelBolts
-import com.radley.homefit.ui.components.color
+import com.radley.homefit.ui.components.coverUri
 import com.radley.homefit.ui.components.icon
 import java.time.DayOfWeek
 import java.time.format.TextStyle
@@ -131,8 +132,13 @@ private fun Title(title: String, subtitle: String? = null) {
 
 @Composable
 private fun Welcome() {
-    Column(Modifier.fillMaxWidth().padding(top = 80.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-        IconBadge(Icons.Rounded.FitnessCenter, MaterialTheme.colorScheme.primary, size = 96.dp)
+    Column(Modifier.fillMaxWidth().padding(top = 32.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+        CoverImage(
+            FocusArea.FULL_BODY.coverUri,
+            Icons.Rounded.FitnessCenter,
+            Modifier.fillMaxWidth().aspectRatio(1.5f),
+            RoundedCornerShape(28.dp),
+        )
         Spacer(Modifier.height(24.dp))
         Text("HomeFit", style = MaterialTheme.typography.displaySmall)
         Spacer(Modifier.height(12.dp))
@@ -176,7 +182,7 @@ private fun FocusStep(state: OnboardingState, vm: OnboardingViewModel) {
     FocusArea.entries.forEach { f ->
         ChoiceCard(f in state.profile.focusAreas, onClick = { vm.toggleFocus(f) }) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                IconBadge(f.icon, f.color, size = 40.dp)
+                CoverImage(f.coverUri, f.icon, Modifier.size(width = 64.dp, height = 48.dp), RoundedCornerShape(10.dp))
                 Spacer(Modifier.width(14.dp))
                 Text(f.label, style = MaterialTheme.typography.titleMedium)
             }
@@ -226,30 +232,27 @@ private fun BodyStep(state: OnboardingState, vm: OnboardingViewModel) {
         }
     }
     Spacer(Modifier.height(12.dp))
+    val yearInvalid = state.birthYearText.length == 4 && parseBirthYear(state.birthYearText) == null
     NumberField(
-        value = state.profile.birthYear?.toString() ?: "",
+        value = state.birthYearText,
         label = "Year of birth",
-        onChange = { text -> vm.profile { it.copy(birthYear = text.toIntOrNull()?.takeIf { y -> y in 1900..2030 }) } },
+        onChange = vm::setBirthYear,
         decimal = false,
+        error = if (yearInvalid) "Enter a year like 1990" else null,
     )
     NumberField(state.heightText, if (state.units == UnitSystem.METRIC) "Height (cm)" else "Height (inches)", vm::setHeight)
     NumberField(state.weightText, "Weight (${Format.weightUnit(state.units)})", vm::setWeight)
-    NumberField(
-        value = state.profile.targetWeightKg?.let { "%.1f".format(Format.weightValue(it, state.units)) } ?: "",
-        label = "Target weight (${Format.weightUnit(state.units)}), optional",
-        onChange = { text ->
-            val v = text.replace(',', '.').toDoubleOrNull()
-            vm.profile { it.copy(targetWeightKg = v?.let { x -> if (state.units == UnitSystem.METRIC) x else com.radley.homefit.domain.BodyMetrics.lbToKg(x) }) }
-        },
-    )
+    NumberField(state.targetWeightText, "Target weight (${Format.weightUnit(state.units)}), optional", vm::setTargetWeight)
 }
 
 @Composable
-private fun NumberField(value: String, label: String, onChange: (String) -> Unit, decimal: Boolean = true) {
+private fun NumberField(value: String, label: String, onChange: (String) -> Unit, decimal: Boolean = true, error: String? = null) {
     OutlinedTextField(
         value = value,
         onValueChange = { onChange(it.filter { c -> c.isDigit() || (decimal && (c == '.' || c == ',')) }) },
         label = { Text(label) },
+        isError = error != null,
+        supportingText = error?.let { { Text(it) } },
         singleLine = true,
         keyboardOptions = KeyboardOptions(keyboardType = if (decimal) KeyboardType.Decimal else KeyboardType.Number),
         modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),

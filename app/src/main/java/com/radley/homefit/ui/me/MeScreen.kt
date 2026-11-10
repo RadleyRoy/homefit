@@ -114,7 +114,7 @@ fun MeScreen(
                         if (app.planStartEpochDay != null) {
                             ListRow("Stop my plan", subtitle = "Keep training freely without a schedule", icon = Icons.Rounded.Today, onClick = { confirmStop = true })
                         }
-                        ListRow("AI coach", subtitle = "Chat and generate workouts (needs your API key)", icon = Icons.Rounded.AutoAwesome, onClick = onCoach)
+                        ListRow("AI coach", subtitle = "Ask Claude, get workouts and reviews on your Claude plan", icon = Icons.Rounded.AutoAwesome, onClick = onCoach)
                         ListRow("Workout settings", subtitle = "Rest, countdown, voice and sounds", icon = Icons.Rounded.Timer, onClick = onWorkoutSettings)
                         ListRow("Reminders", icon = Icons.Rounded.Notifications, onClick = onReminders)
                     }

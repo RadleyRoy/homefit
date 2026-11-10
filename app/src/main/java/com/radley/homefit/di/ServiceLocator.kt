@@ -1,8 +1,6 @@
 package com.radley.homefit.di
 
 import android.content.Context
-import com.radley.homefit.coach.CoachKeyStore
-import com.radley.homefit.coach.CoachService
 import com.radley.homefit.data.BackupManager
 import com.radley.homefit.data.HistoryRepository
 import com.radley.homefit.data.ProgramRepository
@@ -16,6 +14,7 @@ import com.radley.homefit.platform.ReminderScheduler
 import com.radley.homefit.platform.VoiceCoach
 import com.radley.homefit.session.WorkoutSessionController
 import com.radley.homefit.widget.WeeklyGoalWidget
+import kotlinx.coroutines.flow.MutableStateFlow
 
 /**
  * Hand-rolled DI, as in App Lock: a handful of process singletons. The awkward consumers here
@@ -38,8 +37,11 @@ object ServiceLocator {
     val reminderScheduler: ReminderScheduler by lazy { ReminderScheduler(appContext) }
     val reminders: ReminderRepository by lazy { ReminderRepository(database, reminderScheduler) }
 
-    val coachKeys: CoachKeyStore by lazy { CoachKeyStore(appContext) }
-    val coach: CoachService by lazy { CoachService(coachKeys, settings, history, content) }
+    /**
+     * Text shared into HomeFit (Claude's reply, via Share → HomeFit), waiting for the coach
+     * screen to offer it for import.
+     */
+    val coachInbox = MutableStateFlow<String?>(null)
 
     /** Created on first use: binding the TTS engine takes a moment and isn't free. */
     val voice: VoiceCoach by lazy { VoiceCoach(appContext) }

@@ -23,6 +23,7 @@ import com.radley.homefit.domain.PlanGenerator
 import com.radley.homefit.domain.WorkoutRef
 import com.radley.homefit.platform.Notifications
 import com.radley.homefit.ui.navigation.AppNavHost
+import com.radley.homefit.ui.navigation.CoachRoute
 import com.radley.homefit.ui.navigation.PlayerRoute
 import com.radley.homefit.ui.navigation.WorkoutDetailRoute
 import com.radley.homefit.ui.theme.HomeFitTheme
@@ -69,6 +70,10 @@ class MainActivity : ComponentActivity() {
 
     private fun handle(intent: Intent, nav: NavHostController) {
         when {
+            intent.action == Intent.ACTION_SEND -> intent.getStringExtra(Intent.EXTRA_TEXT)?.let { text ->
+                ServiceLocator.coachInbox.value = text
+                nav.navigate(CoachRoute) { launchSingleTop = true }
+            }
             intent.getBooleanExtra(Notifications.EXTRA_OPEN_PLAYER, false) -> {
                 if (ServiceLocator.session.active.value != null) nav.navigate(PlayerRoute) { launchSingleTop = true }
             }

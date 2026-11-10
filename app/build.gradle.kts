@@ -16,6 +16,16 @@ val keystoreFile: File? = System.getenv("HOMEFIT_KEYSTORE_PATH")
     ?.let(::File)
     ?.takeIf(File::exists)
 
+/**
+ * CI passes the release tag's version ("1.2.3"); the version code is derived from it
+ * (1.2.3 -> 10203) so every tagged release installs over the one before it.
+ */
+val appVersionName: String = System.getenv("HOMEFIT_VERSION_NAME")?.takeIf { it.isNotBlank() } ?: "1.1.0"
+val appVersionCode: Int = appVersionName.substringBefore('-').split('.')
+    .map { it.toIntOrNull() ?: 0 }
+    .let { (it + listOf(0, 0, 0)).take(3) }
+    .let { (major, minor, patch) -> major * 10_000 + minor * 100 + patch }
+
 android {
     namespace = "com.radley.homefit"
     compileSdk = 36
@@ -25,8 +35,8 @@ android {
         // 26 is Health Connect's floor; nothing else in the app needs more.
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = appVersionCode
+        versionName = appVersionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -131,10 +141,6 @@ dependencies {
     implementation(libs.androidx.health.connect)
     implementation(libs.androidx.glance.appwidget)
     implementation(libs.androidx.glance.material3)
-    implementation(libs.anthropic.java)
-    // The SDK's Jackson Kotlin module drags in kotlin-reflect 1.9; keep it in step with the compiler.
-    implementation(libs.kotlin.reflect)
-    implementation(libs.tink.android)
 
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlinx.coroutines.android)

@@ -61,7 +61,9 @@ import com.radley.homefit.data.content.ProgramCategory
 import com.radley.homefit.di.ServiceLocator
 import com.radley.homefit.domain.WorkoutRef
 import com.radley.homefit.ui.components.BackTopBar
+import com.radley.homefit.ui.components.CoverWithScrim
 import com.radley.homefit.ui.components.color
+import com.radley.homefit.ui.components.coverUri
 import com.radley.homefit.ui.components.icon
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -137,11 +139,12 @@ fun ProgramScreen(
         if (s == null) return@Scaffold
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState()).padding(16.dp)) {
             val color = s.program.focus.color
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Box(Modifier.size(56.dp).clip(RoundedCornerShape(18.dp)).background(color.copy(alpha = 0.15f)), contentAlignment = Alignment.Center) {
-                    Icon(if (s.program.category == ProgramCategory.RECOVERY) s.program.category.icon else s.program.focus.icon, contentDescription = null, tint = color)
-                }
-                Column(Modifier.padding(start = 14.dp)) {
+            CoverWithScrim(
+                s.program.coverUri,
+                if (s.program.category == ProgramCategory.RECOVERY) s.program.category.icon else s.program.focus.icon,
+                Modifier.fillMaxWidth().height(180.dp).clip(RoundedCornerShape(20.dp)),
+            ) {
+                Column(Modifier.align(Alignment.BottomStart).padding(16.dp)) {
                     Text(
                         if (s.finished) "Completed${if (s.timesCompleted > 1) " ×${s.timesCompleted}" else ""}" else "Day ${s.currentDay} of ${s.program.days}",
                         style = MaterialTheme.typography.titleLarge,

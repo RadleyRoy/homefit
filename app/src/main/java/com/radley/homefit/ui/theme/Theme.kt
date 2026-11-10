@@ -1,9 +1,11 @@
 package com.radley.homefit.ui.theme
 
 import android.app.Activity
+import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalView
@@ -64,9 +66,10 @@ fun HomeFitTheme(content: @Composable () -> Unit) {
         }
     }
 
-    MaterialTheme(
-        colorScheme = DeepTeal,
-        typography = HomeFitTypography,
-        content = content,
-    )
+    MaterialTheme(colorScheme = DeepTeal, typography = HomeFitTypography) {
+        // Material's default content colour is black, which only Surface and Scaffold replace.
+        // Screens drawn straight on the window (onboarding, the player, the finish screen) would
+        // otherwise render unstyled text black on the near-black ground.
+        CompositionLocalProvider(LocalContentColor provides DeepTeal.onBackground, content = content)
+    }
 }

@@ -12,7 +12,6 @@ class WorkoutRefTest {
             WorkoutRef.Custom("3f2a-11"),
             WorkoutRef.ProgramDay("full_body_28", 12),
             WorkoutRef.PlanDay(20_400),
-            WorkoutRef.CoachProposal(7),
         )
         for (ref in refs) assertEquals(ref, WorkoutRef.decode(ref.encode()))
     }

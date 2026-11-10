@@ -17,6 +17,7 @@ import com.radley.homefit.domain.Calories
 import com.radley.homefit.domain.WorkoutRef
 import com.radley.homefit.ui.components.WorkoutCardModel
 import com.radley.homefit.ui.components.estimate
+import com.radley.homefit.ui.components.thumbnailFor
 import com.radley.homefit.ui.components.toCard
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -137,5 +138,6 @@ fun CustomWorkoutEntity.toCard(content: Content, defaultRest: Int, weightKg: Dou
         exerciseCount = items.size,
         kcal = kcal,
         noJump = items.all { content.exercises[it.exerciseId]?.noJump != false },
+        image = content.thumbnailFor(items),
     )
 }

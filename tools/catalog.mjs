@@ -3,8 +3,7 @@
 //
 // An entry with `src` borrows instructions, muscles, level and photos from free-exercise-db
 // (public domain, https://github.com/yuhonas/free-exercise-db); anything given here wins.
-// An entry without `src` is written from scratch and has no photos yet; the app draws a
-// focus-area pictogram in their place.
+// An entry without `src` is written from scratch; its photos come from photos.mjs.
 //
 // measure: "30s" = timed, "x12" = reps. With perSide, the measure applies to each side.
 // met: metabolic equivalent used for the calorie estimate (Compendium of Physical Activities
@@ -370,8 +369,16 @@ export const catalog = [
       'Halfway through, reverse the direction.',
     ],
   }),
-  e('towel_triceps_extension', 'Standing_Towel_Triceps_Extension', 'Towel Triceps Extension', 'x12', {
-    ...MODERATE, focus: ['ARMS'], tips: ['Pull the towel with your lower hand to set the resistance.'],
+  // The dataset's version needs a partner holding the towel; this is the solo one.
+  e('towel_triceps_extension', 'Standing_Towel_Triceps_Extension', 'Towel Triceps Extension', 'x10', {
+    ...MODERATE, perSide: true, focus: ['ARMS'],
+    instructions: [
+      'Stand tall holding one end of a towel in one hand, elbow bent and pointing up, so the towel hangs down your back.',
+      'Reach behind your lower back with the other hand and grab the bottom of the towel.',
+      'Keeping your upper arm beside your head, straighten the top arm while the lower hand pulls down against it.',
+      'Lower slowly. Finish the reps, then switch arms.',
+    ],
+    tips: ['Pull harder with the lower hand to make it tougher.', 'Keep your elbow still; only the forearm moves.'],
   }),
   e('arm_raises', null, 'Arm Raises', '30s', {
     ...LIGHT, category: 'STRENGTH', noJump: true, level: 'BEGINNER', focus: ['ARMS', 'SHOULDERS_BACK'],
@@ -714,7 +721,7 @@ export const catalog = [
       'Relax your shoulders down and hold, breathing slowly.',
     ],
   }),
-  e('hamstring_stretch', 'Hamstring_Stretch', 'Hamstring Stretch', '30s', { ...STRETCH, perSide: true, focus: ['LEGS'] }),
+  e('hamstring_stretch', 'Leg-Up_Hamstring_Stretch', 'Hamstring Stretch', '30s', { ...STRETCH, perSide: true, focus: ['LEGS'] }),
   e('quad_stretch', 'On_Your_Side_Quad_Stretch', 'Quad Stretch', '30s', { ...STRETCH, perSide: true, focus: ['LEGS'] }),
   e('calf_stretch', 'Calf_Stretch_Hands_Against_Wall', 'Calf Stretch', '30s', {
     ...STRETCH, perSide: true, equipment: 'WALL', focus: ['LEGS'],

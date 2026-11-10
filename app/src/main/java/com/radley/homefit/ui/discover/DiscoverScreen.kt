@@ -52,12 +52,13 @@ import com.radley.homefit.domain.WorkoutRef
 import com.radley.homefit.ui.components.AppCard
 import com.radley.homefit.ui.components.Format
 import com.radley.homefit.ui.components.IconBadge
-import com.radley.homefit.ui.components.ListRow
 import com.radley.homefit.ui.components.SectionHeader
 import com.radley.homefit.ui.components.TabTopBar
 import com.radley.homefit.ui.components.WorkoutCardModel
 import com.radley.homefit.ui.components.WorkoutRow
+import com.radley.homefit.ui.components.CoverImage
 import com.radley.homefit.ui.components.color
+import com.radley.homefit.ui.components.coverUri
 import com.radley.homefit.ui.components.icon
 import com.radley.homefit.ui.workout.ExercisePickRow
 import com.radley.homefit.ui.workout.ExerciseSheet
@@ -184,10 +185,9 @@ private fun ShortcutCard(
 
 @Composable
 private fun TileCard(card: WorkoutCardModel, onClick: () -> Unit) {
-    AppCard(Modifier.width(168.dp), onClick = onClick) {
-        Column(Modifier.padding(14.dp)) {
-            IconBadge(card.icon, card.color)
-            Spacer(Modifier.height(10.dp))
+    AppCard(Modifier.width(176.dp), onClick = onClick) {
+        CoverImage(card.image, card.icon, Modifier.fillMaxWidth().height(104.dp))
+        Column(Modifier.padding(12.dp)) {
             Text(card.title, style = MaterialTheme.typography.titleSmall, maxLines = 2, minLines = 2)
             Spacer(Modifier.height(4.dp))
             Text(
@@ -202,17 +202,22 @@ private fun TileCard(card: WorkoutCardModel, onClick: () -> Unit) {
 @Composable
 private fun RecoveryRow(status: ProgramStatus, onClick: () -> Unit) {
     AppCard(Modifier.fillMaxWidth(), onClick = onClick) {
-        ListRow(
-            title = status.program.name,
-            subtitle = when {
-                status.finished -> "Completed"
-                status.started -> "Day ${status.currentDay} of ${status.program.days}"
-                else -> "${status.program.days}-day course"
-            },
-            icon = status.program.category.icon,
-            iconTint = status.program.focus.color,
-            onClick = onClick,
-        )
+        Row(Modifier.padding(10.dp), verticalAlignment = Alignment.CenterVertically) {
+            CoverImage(status.program.coverUri, status.program.category.icon, Modifier.size(width = 84.dp, height = 64.dp), RoundedCornerShape(14.dp))
+            Spacer(Modifier.width(14.dp))
+            Column(Modifier.weight(1f)) {
+                Text(status.program.name, style = MaterialTheme.typography.titleMedium)
+                Text(
+                    when {
+                        status.finished -> "Completed"
+                        status.started -> "Day ${status.currentDay} of ${status.program.days}"
+                        else -> "${status.program.days}-day course"
+                    },
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
     }
 }
 

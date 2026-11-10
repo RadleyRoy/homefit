@@ -17,7 +17,9 @@ import com.radley.homefit.domain.PlanGenerator
 import com.radley.homefit.domain.Streaks
 import com.radley.homefit.domain.WorkoutRef
 import com.radley.homefit.ui.components.WorkoutCardModel
+import com.radley.homefit.ui.components.coverUri
 import com.radley.homefit.ui.components.estimate
+import com.radley.homefit.ui.components.thumbnailFor
 import com.radley.homefit.ui.components.toCard
 import java.time.LocalDate
 import kotlinx.coroutines.flow.SharingStarted
@@ -118,6 +120,7 @@ class HomeViewModel : ViewModel() {
                         seconds = seconds,
                         exerciseCount = day.items.size,
                         kcal = kcal,
+                        image = content.coverUri(null, day.focus, null) ?: content.thumbnailFor(day.items),
                     ),
                     doneToday = today.toEpochDay() in workoutDays,
                 )

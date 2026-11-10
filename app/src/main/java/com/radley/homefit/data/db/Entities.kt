@@ -112,16 +112,3 @@ data class AchievementEntity(
     @PrimaryKey val id: String,
     val unlockedAt: Long,
 )
-
-@Serializable
-@Entity(tableName = "coach_messages", indices = [Index("createdAt")])
-data class CoachMessageEntity(
-    @PrimaryKey(autoGenerate = true) val id: Long = 0,
-    /** "user" or "assistant". */
-    val role: String,
-    val text: String,
-    val createdAt: Long,
-    /** A workout the coach proposed alongside this message, in encodeItems format. */
-    val workoutName: String? = null,
-    val workoutItems: String? = null,
-)

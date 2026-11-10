@@ -24,4 +24,3 @@ import kotlinx.serialization.Serializable
 @Serializable data object DataRoute
 @Serializable data object AboutRoute
 @Serializable data object CoachRoute
-@Serializable data object CoachSettingsRoute

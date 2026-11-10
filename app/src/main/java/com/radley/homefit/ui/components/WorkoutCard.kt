@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Favorite
@@ -42,6 +44,8 @@ data class WorkoutCardModel(
     val kcal: Double,
     val tags: Set<String> = emptySet(),
     val noJump: Boolean = true,
+    /** Cover or first-exercise photo, as an asset URI; null draws the category glyph. */
+    val image: String? = null,
 ) {
     val color: Color get() = focus?.color ?: category.color
     val icon: ImageVector get() = focus?.icon ?: category.icon
@@ -68,6 +72,7 @@ fun WorkoutTemplate.toCard(content: Content, defaultRest: Int, weightKg: Double)
         kcal = kcal,
         tags = tags,
         noJump = items.all { content.exercises[it.exerciseId]?.noJump != false },
+        image = content.coverUri(id, focus, category) ?: content.thumbnailFor(items, focus),
     )
 }
 
@@ -79,8 +84,8 @@ fun WorkoutRow(
     favorite: Boolean = false,
 ) {
     AppCard(modifier.fillMaxWidth(), onClick = onClick) {
-        Row(Modifier.padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
-            IconBadge(card.icon, card.color, size = 52.dp)
+        Row(Modifier.padding(10.dp), verticalAlignment = Alignment.CenterVertically) {
+            CoverImage(card.image, card.icon, Modifier.size(width = 84.dp, height = 64.dp), RoundedCornerShape(14.dp))
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {

@@ -58,10 +58,5 @@ data class AppPrefs(
     val planStartEpochDay: Long? = null,
     /** Fixed per plan so regenerating a day always gives the same exercises. */
     val planSeed: Long = 0,
-    val coachModel: String = DEFAULT_COACH_MODEL,
     val healthConnectSync: Boolean = false,
-) {
-    companion object {
-        const val DEFAULT_COACH_MODEL = "claude-opus-5-5"
-    }
-}
+)

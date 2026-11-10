@@ -32,9 +32,15 @@ data class OnboardingState(
     val step: OnboardingStep = OnboardingStep.WELCOME,
     val profile: Profile = Profile(),
     val units: UnitSystem = UnitSystem.METRIC,
-    /** Entered in the display unit; converted on save. */
+    /**
+     * Typed text, parsed only on save. Binding a field straight to the parsed number would reject
+     * every keystroke until the value was complete: "1" isn't a valid birth year yet.
+     * Weights and height are in the display unit and converted on save.
+     */
     val weightText: String = "",
     val heightText: String = "",
+    val birthYearText: String = "",
+    val targetWeightText: String = "",
     val reminderOn: Boolean = true,
     val reminderHour: Int = 19,
     val reminderMinute: Int = 0,
@@ -64,6 +70,8 @@ class OnboardingViewModel(editing: Boolean) : ViewModel() {
                     units = units,
                     weightText = weight?.let { kg -> "%.1f".format(if (units == UnitSystem.METRIC) kg else BodyMetrics.kgToLb(kg)) } ?: "",
                     heightText = profile.heightCm?.let { cm -> "%.0f".format(if (units == UnitSystem.METRIC) cm else BodyMetrics.cmToInches(cm)) } ?: "",
+                    birthYearText = profile.birthYear?.toString() ?: "",
+                    targetWeightText = profile.targetWeightKg?.let { kg -> "%.1f".format(if (units == UnitSystem.METRIC) kg else BodyMetrics.kgToLb(kg)) } ?: "",
                     reminderOn = !editing,
                 )
             }
@@ -71,9 +79,11 @@ class OnboardingViewModel(editing: Boolean) : ViewModel() {
     }
 
     fun profile(transform: (Profile) -> Profile) = _state.update { it.copy(profile = transform(it.profile)) }
-    fun setUnits(units: UnitSystem) = _state.update { it.copy(units = units, weightText = "", heightText = "") }
+    fun setUnits(units: UnitSystem) = _state.update { it.copy(units = units, weightText = "", heightText = "", targetWeightText = "") }
     fun setWeight(text: String) = _state.update { it.copy(weightText = text) }
     fun setHeight(text: String) = _state.update { it.copy(heightText = text) }
+    fun setBirthYear(text: String) = _state.update { it.copy(birthYearText = text.take(4)) }
+    fun setTargetWeight(text: String) = _state.update { it.copy(targetWeightText = text) }
     fun setReminder(on: Boolean, hour: Int = _state.value.reminderHour, minute: Int = _state.value.reminderMinute) =
         _state.update { it.copy(reminderOn = on, reminderHour = hour, reminderMinute = minute) }
 
@@ -134,8 +144,15 @@ class OnboardingViewModel(editing: Boolean) : ViewModel() {
         val metric = s.units == UnitSystem.METRIC
         val height = s.heightText.replace(',', '.').toDoubleOrNull()?.let { if (metric) it else BodyMetrics.inchesToCm(it) }
         val weight = s.weightText.replace(',', '.').toDoubleOrNull()?.let { if (metric) it else BodyMetrics.lbToKg(it) }
+        val target = s.targetWeightText.replace(',', '.').toDoubleOrNull()?.let { if (metric) it else BodyMetrics.lbToKg(it) }
 
-        settings.setProfile(s.profile.copy(heightCm = height ?: s.profile.heightCm))
+        settings.setProfile(
+            s.profile.copy(
+                heightCm = height ?: s.profile.heightCm,
+                birthYear = parseBirthYear(s.birthYearText) ?: s.profile.birthYear,
+                targetWeightKg = target ?: s.profile.targetWeightKg,
+            ),
+        )
         weight?.let { ServiceLocator.history.logWeight(LocalDate.now().toEpochDay(), it) }
         val existing = settings.currentAppPrefs()
         settings.updateAppPrefs {
@@ -158,6 +175,10 @@ class OnboardingViewModel(editing: Boolean) : ViewModel() {
         onDone()
     }
 }
+
+/** A plausible year of birth, or null for blank or out-of-range input. */
+internal fun parseBirthYear(text: String, thisYear: Int = LocalDate.now().year): Int? =
+    text.trim().toIntOrNull()?.takeIf { it in 1900..thisYear - 5 }
 
 val Level.pushUpRange: String
     get() = when (this) {
