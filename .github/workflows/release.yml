@@ -28,7 +28,7 @@ jobs:
           java-version: '17'
 
       - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v5
 
       # The tag is the version: build.gradle.kts reads HOMEFIT_VERSION_NAME and derives the
       # version code from it (1.2.3 -> 10203), so a later tag always installs over an earlier one.
@@ -96,7 +96,7 @@ jobs:
         run: rm -f "$RUNNER_TEMP/homefit-release.jks"
 
       - name: Publish release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.version.outputs.tag }}
           target_commitish: ${{ github.sha }}
